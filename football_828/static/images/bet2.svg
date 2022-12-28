@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="81px" height="81px" viewBox="0 0 81 81" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 9备份</title>
+    <defs>
+        <linearGradient x1="62.2100178%" y1="100%" x2="31.9885889%" y2="13.7019894%" id="linearGradient-1">
+            <stop stop-color="#CA962E" offset="0%"></stop>
+            <stop stop-color="#FFD37D" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-2" points="0 0 43.875 0 43.875 50.625 0 50.625"></polygon>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板备份-17" transform="translate(-26.000000, -134.000000)">
+            <g id="编组-9备份" transform="translate(26.000000, 134.000000)">
+                <g id="编组-10" fill="url(#linearGradient-1)" fill-rule="nonzero">
+                    <circle id="椭圆形备份-2" cx="40.5" cy="40.5" r="40.5"></circle>
+                </g>
+                <g id="guizezhongxin" transform="translate(20.250000, 13.500000)">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M33.9020925,5.84282297 L43.875,5.84282297 L43.875,50.625 L0,50.625 L0,5.84282297 L9.97290747,5.84282297 L9.97290747,9.73677486 L33.9020925,9.73677486 L33.9020925,5.84282297 Z M7.97650928,25.3125 L35.8984907,25.3125 L35.8984907,21.4185481 L7.97650928,21.4185481 L7.97650928,25.3125 Z M7.97650928,40.8882251 L35.8984907,40.8882251 L35.8984907,36.9943557 L7.97650928,36.9943557 L7.97650928,40.8882251 Z M13.9609907,5.84282297 L29.9140093,5.84282297 L29.9140093,0 L13.9609907,0 L13.9609907,5.84282297 Z" id="Fill-1" fill="#FFFFFF" mask="url(#mask-3)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

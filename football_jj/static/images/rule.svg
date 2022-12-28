@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 13备份 4</title>
+    <defs>
+        <filter x="-16.2%" y="-16.3%" width="132.5%" height="132.5%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.485543514   0 0 0 0 0.485543514   0 0 0 0 0.485543514  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#E246F2" offset="0%"></stop>
+            <stop stop-color="#AF00B2" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="gongneng" transform="translate(-304.000000, -371.000000)">
+            <g id="编组-13备份-4" filter="url(#filter-1)" transform="translate(309.000000, 376.000000)">
+                <g id="huodongyouli备份-2">
+                    <path d="M0,19.9999449 C0,27.1453768 3.81188596,33.7480158 10.0000827,37.3204837 C16.1880038,40.8931721 23.8119962,40.8931721 29.9999724,37.3204837 C36.1878936,33.7480158 40,27.1453768 40,19.9999449 C40,8.95437409 31.0457057,0 19.9998898,0 C8.95434941,0 0,8.95437409 0,19.9999449 Z" id="Fill-1" fill="url(#linearGradient-2)"></path>
+                    <path d="M17.0588235,20 L17.0588235,10.5882353 L16.3911305,14.2650974 L10.5882353,11.1764706 C11.8856375,11.7426844 12.6699512,12.3309197 12.9411765,12.9411765 C13.2124017,13.5514332 13.2124017,14.7279038 12.9411765,16.4705882 L12.5100708,22.508006 L12.3529412,21.7647059 L15.3347461,39.4053195 C16.9164266,39.8004998 18.5407843,40 20.1713715,40 C31.1230813,40 40,31.1355089 40,20.1991316 C40,9.26275437 34.7528218,11.1380063 34.7058824,10.5882353 L26.4705882,10.5882353 L17.0588235,20 Z" id="Fill-3" fill="#A313AF"></path>
+                    <path d="M24.8599586,9 L13.2040781,9 C11.9875613,9 11,10.0246131 11,11.2867718 L11,24.6671148 C11,27.609978 13.3065304,30 16.139888,30 L27.7957685,30 C29.0122854,30 30,28.9752307 30,27.713072 L30,14.332729 C30.002933,11.3930679 27.6965532,9 24.8599586,9 Z M21.9841685,23 L17.0156974,23 C16.4542208,23 16,22.5535098 16,22.0015892 C16,21.4495523 16.4542208,21 17.0156974,21 L21.9841685,21 C22.5457634,21 23,21.4465289 23,22.0015892 C23.0030993,22.5504477 22.5457634,23 21.9841685,23 Z M24.9690664,18 L16.0307735,18 C15.4609628,18 15,17.552795 15,16.9999224 C15,16.447205 15.4609628,16 16.0307735,16 L24.9690664,16 C25.5389972,16 26,16.447205 26,16.9999224 C26,17.552795 25.5389972,18 24.9690664,18 Z" id="renwu" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

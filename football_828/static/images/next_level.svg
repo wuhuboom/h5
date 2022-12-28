@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="49px" height="49px" viewBox="0 0 49 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 2</title>
+    <defs>
+        <linearGradient x1="15.1902667%" y1="7.4933232%" x2="97.7338607%" y2="85.9121176%" id="linearGradient-1">
+            <stop stop-color="#FFE691" offset="0%"></stop>
+            <stop stop-color="#FFC24A" offset="100%"></stop>
+        </linearGradient>
+        <path d="M12.8114907,0.252453409 L1.67568427,4.33558243 C0.720993601,4.68563568 0.180924908,5.69631524 0.420493361,6.68453512 L3.41871679,19.0522067 C3.53540337,19.5335389 3.82653435,19.9544552 4.23574335,20.2334614 L12.3733264,25.7818134 C13.0529705,26.2452072 13.9470295,26.2452072 14.6266736,25.7818134 L22.7642567,20.2334614 C23.1734657,19.9544552 23.4645966,19.5335389 23.5812832,19.0522067 L26.5795066,6.68453512 C26.8190751,5.69631524 26.2790064,4.68563568 25.3243157,4.33558243 L14.1885093,0.252453409 C13.7439734,0.0894569184 13.2560266,0.0894569184 12.8114907,0.252453409 Z" id="path-2"></path>
+        <filter x="-61.6%" y="-59.8%" width="223.2%" height="226.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="微商中心" transform="translate(-32.000000, -235.000000)">
+            <g id="编组-2" transform="translate(43.000000, 245.000000)">
+                <g id="路径-3">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                </g>
+                <path d="M13.5,2.86353937 L13.5,8.55 L13.5,20.7 L13.5,23.625 C13.5,24.4787602 14.1921094,25.1708697 15.0458697,25.1708697 C15.3565502,25.1708697 15.6600222,25.0772576 15.916715,24.9022398 L22.7642567,20.2334614 C23.1734657,19.9544552 23.4645966,19.5335389 23.5812832,19.0522067 L26.5795066,6.68453512 C26.8190751,5.69631524 26.2790064,4.68563568 25.3243157,4.33558243 L16.1885093,0.985786743 C15.1514552,0.605533557 14.0025006,1.13797593 13.6222474,2.17503008 C13.5413815,2.39557333 13.5,2.62863809 13.5,2.86353937 Z" id="路径-3" fill="#FFCE63"></path>
+                <g id="shuju-(2)" transform="translate(13.900420, 11.790000) scale(-1, 1) translate(-13.900420, -11.790000) translate(8.103219, 6.300000)" fill="#333333">
+                    <polygon id="Fill-1" points="4.63846603 8.66028169 6.95818434 8.66028169 6.95818434 0 4.63846603 0"></polygon>
+                    <polygon id="Fill-2" points="1.54550828 8.66028169 3.86522659 8.66028169 3.86522659 4.02084507 1.54550828 4.02084507"></polygon>
+                    <g id="编组" transform="translate(0.000000, 2.489239)">
+                        <polygon id="Fill-3" points="7.71240014 6.15905095 10.0422612 6.15905095 10.0422612 0 7.71240014 0"></polygon>
+                        <polygon id="Fill-5" points="0 8.49076109 11.5944018 8.49076109 11.5944018 6.97278898 0 6.97278898"></polygon>
+                    </g>
+                    <polygon id="Fill-6" points="5.41170546 8.66028169 6.95818434 8.66028169 6.95818434 0.927887324 5.41170546 0.927887324"></polygon>
+                    <polygon id="Fill-7" points="2.31874772 8.66028169 3.86522659 8.66028169 3.86522659 4.94873239 2.31874772 4.94873239"></polygon>
+                    <polygon id="Fill-8" points="8.50466321 8.66028169 10.0511421 8.66028169 10.0511421 3.24760563 8.50466321 3.24760563"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

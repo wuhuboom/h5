@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="81px" height="81px" viewBox="0 0 81 81" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 11备份</title>
+    <defs>
+        <linearGradient x1="84.345128%" y1="12.1535961%" x2="11.4843809%" y2="84.2635228%" id="linearGradient-1">
+            <stop stop-color="#3E464D" offset="0%"></stop>
+            <stop stop-color="#384459" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-2" cx="40.5" cy="40.5" r="40.5"></circle>
+        <filter x="-1.9%" y="-1.9%" width="103.7%" height="103.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="1" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.576101994   0 0 0 0 0.576101994   0 0 0 0 0.576101994  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板备份-17" transform="translate(-20.000000, -348.000000)">
+            <g id="编组-11备份" transform="translate(20.000000, 348.000000)">
+                <g id="椭圆形备份-3">
+                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                </g>
+                <path d="M40.5001212,40.2822581 C33.6172756,40.2822581 28.0887097,34.2674044 28.0887097,26.891129 C28.0887097,19.5148537 33.6172756,13.5 40.5001212,13.5 C47.3827244,13.5 52.9112903,19.5148537 52.9112903,26.891129 C52.9112903,34.2674044 47.3827244,40.2822581 40.5001212,40.2822581 Z M20.25,53.6733871 C20.25,48.442227 24.5312297,44.2016129 29.8124927,44.2016129 L51.1875829,44.2016129 C54.6039501,44.2016129 57.7606712,46.0069802 59.468885,48.9373803 C61.1770383,51.8680198 61.1770383,55.4787544 59.468885,58.4093939 C57.7606712,61.339794 54.6039501,63.1451613 51.1875829,63.1451613 L29.8124927,63.1451613 C24.533828,63.1391163 20.2561633,58.9020334 20.25,53.6733871 Z" id="wodedamaijihuo-(1)" fill="#748091"></path>
+            </g>
+        </g>
+    </g>
+</svg>

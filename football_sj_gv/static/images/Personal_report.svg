@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="27px" height="28px" viewBox="0 0 27 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>线性等级</title>
+    <defs>
+        <path d="M8.95472123,18.4504816 L3.32493653,11.8741688 C2.81793522,11.281926 2.7012878,10.4490499 3.02608177,9.74031107 L4.66372269,6.16678522 C4.9895324,5.45582998 5.69984116,5 6.48189572,5 L17.5048122,5 C18.2868658,5 18.9971738,5.45582887 19.3229841,6.16678281 L20.9606314,9.74031008 C21.2854267,10.4490493 21.1687797,11.2819267 20.6617778,11.8741702 L15.0319943,18.4504816 C13.5953438,20.1286742 11.0702645,20.3244828 9.39207192,18.8878323 C9.23521894,18.7535551 9.08899837,18.6073346 8.95472123,18.4504816 Z" id="path-1"></path>
+        <filter x="-11.3%" y="-14.7%" width="122.6%" height="116.8%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="3" dy="0" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.909803922   0 0 0 0 0.945098039   0 0 0 0 0.996078431  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="电商icon" transform="translate(-287.000000, -338.000000)">
+            <g id="线性等级" transform="translate(287.000000, 338.000000)">
+                <g id="编组" transform="translate(3.000000, 4.000000)">
+                    <rect id="矩形" x="0" y="0" width="24" height="24"></rect>
+                    <g id="路径" stroke-linecap="round" stroke-linejoin="round">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use stroke="#2A83FC" stroke-width="2" xlink:href="#path-1"></use>
+                    </g>
+                    <polyline id="路径" stroke="#2AD2FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="15 10 12 13 9 10"></polyline>
+                </g>
+                <path d="M1,7 C1.55228475,7 2,7.44771525 2,8 C2,8.55228475 1.55228475,9 1,9 C0.44771525,9 0,8.55228475 0,8 C0,7.44771525 0.44771525,7 1,7 Z M26,0 C26.5522847,0 27,0.44771525 27,1 C27,1.55228475 26.5522847,2 26,2 C25.4477153,2 25,1.55228475 25,1 C25,0.44771525 25.4477153,0 26,0 Z" id="形状结合" fill="#2A83FC"></path>
+                <circle id="椭圆形备份-5" fill="#2AD2FC" cx="2" cy="4" r="1"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

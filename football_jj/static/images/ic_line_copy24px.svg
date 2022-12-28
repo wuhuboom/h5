@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="39px" height="43px" viewBox="0 0 39 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ic_line_copy24px</title>
+    <defs>
+        <linearGradient x1="27.1881793%" y1="6.04020785%" x2="81.2813736%" y2="87.1397941%" id="linearGradient-1">
+            <stop stop-color="#FFE691" offset="0%"></stop>
+            <stop stop-color="#FFC24A" offset="100%"></stop>
+        </linearGradient>
+        <path d="M341.887889,636.2 C342.448078,636.2 342.98528,636.421238 343.381335,636.815019 C343.777484,637.208893 344,637.74304 344,638.299981 L344,650.899927 C344,651.456868 343.777484,651.991107 343.381335,652.384888 C342.98528,652.778669 342.448078,653 341.887889,653 L333.439384,653 C332.879194,653 332.341993,652.778669 331.945814,652.384888 C331.549789,651.991107 331.327273,651.456868 331.327273,650.899927 L331.327273,638.299981 C331.327273,637.74304 331.549789,637.208893 331.945814,636.815019 C332.341993,636.421238 332.879194,636.2 333.439384,636.2 L341.887889,636.2 Z M333.490909,650.9 L341.836364,650.9 L341.836364,638.3 L333.490909,638.3 L333.490909,650.9 Z M338.616558,632 C339.199792,632 339.672727,632.470101 339.672727,633.04999 L339.671613,634.099981 L329.11209,634.099981 L329.1111,648.8 L328.056045,648.8 C327.472781,648.8 327,648.32993 327,647.75001 L327,634.099981 C327,633.543009 327.222483,633.008893 327.618659,632.615112 C328.01471,632.221238 328.551906,632 329.11209,632 L338.616558,632 Z" id="path-2"></path>
+        <filter x="-100.0%" y="-76.2%" width="300.0%" height="261.9%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ic_line_copy24px" transform="translate(-316.000000, -622.000000)">
+            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+            <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+        </g>
+    </g>
+</svg>

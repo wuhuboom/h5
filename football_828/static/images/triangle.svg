@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="10px" viewBox="0 0 16 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>矩形</title>
+    <defs>
+        <linearGradient x1="62.2100178%" y1="100%" x2="31.9885889%" y2="13.7019894%" id="linearGradient-1">
+            <stop stop-color="#CA962E" offset="0%"></stop>
+            <stop stop-color="#FFD37D" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="gongneng备份-7" transform="translate(-91.000000, -33.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <g id="编组-6" transform="translate(15.000000, 22.000000)">
+                <path d="M79,4 L86.4620172,4 C87.5001436,4 88.3417112,4.84156767 88.3417112,5.87969401 C88.3417112,6.37821985 88.1436726,6.85632738 87.7911616,7.20883838 L84.5823232,10.4176768 L80.4142136,14.5857864 C79.633165,15.366835 78.366835,15.366835 77.5857864,14.5857864 C77.2107137,14.2107137 77,13.7020059 77,13.1715729 L77,6 C77,4.8954305 77.8954305,4 79,4 Z" id="矩形" transform="translate(84.000000, 11.000000) rotate(-135.000000) translate(-84.000000, -11.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

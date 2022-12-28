@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="20px" viewBox="0 0 21 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>印度尼西亚</title>
+    <defs>
+        <circle id="path-1" cx="10" cy="10" r="10"></circle>
+        <polygon id="path-3" points="0 0 30 0 30 20 0 20"></polygon>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板备份-17" transform="translate(-297.000000, -1537.000000)">
+            <g id="印度尼西亚" transform="translate(297.090909, 1537.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="蒙版" fill="#D8D8D8" xlink:href="#path-1"></use>
+                <g id="yindunixiya" mask="url(#mask-2)">
+                    <g transform="translate(-10.000000, 0.000000)">
+                        <g id="编组" stroke-width="1" fill="none">
+                            <mask id="mask-4" fill="white">
+                                <use xlink:href="#path-3"></use>
+                            </mask>
+                            <g id="Clip-2"></g>
+                            <path d="M0.121618875,19.8527586 L29.8770099,19.8527586 L29.8770099,0.122729642 L0.121618875,0.122729642 L0.121618875,19.8527586 Z M30.0135907,20.0023219 L30.0135907,19.8527586 L30.0135907,20.0023219 Z M-0.00146912271,20 L-0.00146912271,0 L30,0 L30,19.9754883 L-0.00146912271,19.9754883 L-0.00146912271,20 Z" id="Fill-1" fill="#353636" mask="url(#mask-4)"></path>
+                        </g>
+                        <polygon id="Fill-3" fill="#CC303C" points="0 10 30 10 30 0 0 0"></polygon>
+                        <polygon id="Fill-4" fill="#FFFFFF" points="0 20 30 20 30 10 0 10"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

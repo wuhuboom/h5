@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>huodongyouli备份</title>
+    <defs>
+        <filter x="-16.2%" y="-16.2%" width="132.5%" height="132.5%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.485543514   0 0 0 0 0.485543514   0 0 0 0 0.485543514  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <polygon id="path-2" points="0 0 21 0 21 24 0 24"></polygon>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="gongneng" transform="translate(-110.000000, -221.000000)">
+            <g id="huodongyouli备份" filter="url(#filter-1)" transform="translate(115.000000, 226.000000)">
+                <path d="M0,19.9999449 C0,27.1453768 3.81188596,33.7480158 10.0000827,37.3204837 C16.1880038,40.8931721 23.8119962,40.8931721 29.9999724,37.3204837 C36.1878936,33.7480158 40,27.1453768 40,19.9999449 C40,8.95437409 31.0457057,0 19.9998898,0 C8.95434941,0 0,8.95437409 0,19.9999449 Z" id="Fill-1" fill="#FF745F"></path>
+                <path d="M22.2999325,11.2700323 L17.3913043,11.3043478 L16.3911305,14.2650974 L15.5,16.5 L12.5100708,22.508006 L12,31 L15.3347461,39.4053195 C16.9164266,39.8004998 18.5407843,40 20.1713715,40 C21.59724,40 22.9879387,39.8497381 24.3284558,39.5642052 C33.2840868,37.6566374 40,29.7116366 40,20.1991316 C40,19.6381197 39.9752461,19.0815823 39.9283066,18.5318113 L26.9565217,10.4347826 L22.2999325,11.2700323 Z" id="Fill-3" fill="#EF553E"></path>
+                <g id="guizezhongxin" transform="translate(10.000000, 8.000000)">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M16.2266426,2.76993089 L21,2.76993089 L21,24 L0,24 L0,2.76993089 L4.77335742,2.76993089 L4.77335742,4.61595253 L16.2266426,4.61595253 L16.2266426,2.76993089 Z M3.81781641,12 L17.1821836,12 L17.1821836,10.1539784 L3.81781641,10.1539784 L3.81781641,12 Z M3.81781641,19.3840475 L17.1821836,19.3840475 L17.1821836,17.5380649 L3.81781641,17.5380649 L3.81781641,19.3840475 Z M6.68218359,2.76993089 L14.3178164,2.76993089 L14.3178164,0 L6.68218359,0 L6.68218359,2.76993089 Z" id="Fill-1" fill="#FFFFFF" mask="url(#mask-3)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

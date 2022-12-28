@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="81px" height="81px" viewBox="0 0 81 81" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 8备份</title>
+    <defs>
+        <linearGradient x1="84.345128%" y1="12.1535961%" x2="11.4843809%" y2="84.2635228%" id="linearGradient-1">
+            <stop stop-color="#3E464D" offset="0%"></stop>
+            <stop stop-color="#384459" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-2" cx="40.5" cy="40.5" r="40.5"></circle>
+        <filter x="-1.9%" y="-1.9%" width="103.7%" height="103.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="1" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.576101994   0 0 0 0 0.576101994   0 0 0 0 0.576101994  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <polygon id="path-4" points="0 0 43.875 0 43.875 50.625 0 50.625"></polygon>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板备份-17" transform="translate(-279.000000, -240.000000)">
+            <g id="编组-8备份" transform="translate(279.000000, 240.000000)">
+                <g id="椭圆形备份-2">
+                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                </g>
+                <g id="guizezhongxin" transform="translate(20.250000, 13.500000)">
+                    <mask id="mask-5" fill="white">
+                        <use xlink:href="#path-4"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M33.9020925,5.84282297 L43.875,5.84282297 L43.875,50.625 L0,50.625 L0,5.84282297 L9.97290747,5.84282297 L9.97290747,9.73677486 L33.9020925,9.73677486 L33.9020925,5.84282297 Z M7.97650928,25.3125 L35.8984907,25.3125 L35.8984907,21.4185481 L7.97650928,21.4185481 L7.97650928,25.3125 Z M7.97650928,40.8882251 L35.8984907,40.8882251 L35.8984907,36.9943557 L7.97650928,36.9943557 L7.97650928,40.8882251 Z M13.9609907,5.84282297 L29.9140093,5.84282297 L29.9140093,0 L13.9609907,0 L13.9609907,5.84282297 Z" id="Fill-1" fill="#748091" mask="url(#mask-5)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

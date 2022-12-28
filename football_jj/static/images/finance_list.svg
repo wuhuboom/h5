@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 4</title>
+    <defs>
+        <linearGradient x1="15.1902667%" y1="24.7009044%" x2="97.7338607%" y2="71.3741503%" id="linearGradient-1">
+            <stop stop-color="#FFE691" offset="0%"></stop>
+            <stop stop-color="#FFC24A" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="26" height="19.7241379" rx="2"></rect>
+        <filter x="-65.4%" y="-81.1%" width="230.8%" height="272.4%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="15.1902667%" y1="46.4114455%" x2="97.7338607%" y2="53.0318199%" id="linearGradient-4">
+            <stop stop-color="#FFE691" offset="0%"></stop>
+            <stop stop-color="#FFC24A" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-5" x="6.27586207" y="21.5172414" width="12.5517241" height="3.5862069" rx="1.79310345"></rect>
+        <filter x="-135.4%" y="-446.2%" width="370.9%" height="1048.1%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="微商中心" transform="translate(-164.000000, -236.000000)">
+            <g id="编组-4" transform="translate(175.000000, 246.000000)">
+                <g id="矩形">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                </g>
+                <g id="矩形备份-6">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                    <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-5"></use>
+                </g>
+                <rect id="矩形" fill="#E0B757" x="13.4482759" y="0" width="12.5517241" height="19.7241379" rx="2"></rect>
+                <ellipse id="椭圆形" fill="#333333" cx="13" cy="9.86206897" rx="6.72413793" ry="1.79310345"></ellipse>
+                <ellipse id="椭圆形" fill="#333333" transform="translate(13.000000, 9.862069) rotate(-270.000000) translate(-13.000000, -9.862069) " cx="13" cy="9.86206897" rx="6.72413793" ry="1.79310345"></ellipse>
+            </g>
+        </g>
+    </g>
+</svg>

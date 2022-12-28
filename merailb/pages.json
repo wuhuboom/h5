@@ -1,0 +1,415 @@
+{
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue" //匹配uView-ui
+			//"^vue-file-(.*)": "packageName/path/to/vue-file-$1.vue" // 匹配node_modules内的vue文件
+		}
+
+	},
+
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/home/index",
+			"style": {
+				"navigationBarTitleText": "home",
+				"navigationBarBackgroundColor": "#082032",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					//下面这句代码完美解决软键盘把fixed顶起问题
+					"softinputMode": "adjustResize",
+					"titleNView": false
+				}
+			}
+
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "index",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/get/index",
+			"style": {
+				"navigationBarTitleText": "get",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					//下面这句代码完美解决软键盘把fixed顶起问题
+					"softinputMode": "adjustResize",
+					"titleNView": false,
+					//app页面不显示滚动条
+					"scrollIndicator": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/login/register",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					//下面这句代码完美解决软键盘把fixed顶起问题
+					"softinputMode": "adjustResize",
+					"titleNView": false,
+					//app页面不显示滚动条
+					"scrollIndicator": "none"
+				}
+			}
+		},
+
+		{
+			"path": "pages/recharge/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					//下面这句代码完美解决软键盘把fixed顶起问题
+					"softinputMode": "adjustResize",
+					"titleNView": false,
+					//app页面不显示滚动条
+					"scrollIndicator": "none"
+				}
+			}
+
+		},
+		{
+			"path": "pages/withdraw/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					//下面这句代码完美解决软键盘把fixed顶起问题
+					"softinputMode": "adjustResize",
+					"titleNView": false,
+					//app页面不显示滚动条
+					"scrollIndicator": "none"
+				}
+			}
+
+		},
+		{
+			"path": "components/self-tabbar/self-tabbar",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/order/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					//下面这句代码完美解决软键盘把fixed顶起问题
+					"softinputMode": "adjustResize",
+					"titleNView": false,
+					//app页面不显示滚动条
+					"scrollIndicator": "none"
+				}
+			}
+
+		},
+		{
+			"path": "pages/order/orderDetail",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					//下面这句代码完美解决软键盘把fixed顶起问题
+					"softinputMode": "adjustResize",
+					"titleNView": false,
+					//app页面不显示滚动条
+					"scrollIndicator": "none"
+				}
+			}
+
+		},
+		{
+			"path": "pages/order/signleDetail",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					//下面这句代码完美解决软键盘把fixed顶起问题
+					"softinputMode": "adjustResize",
+					"titleNView": false,
+					//app页面不显示滚动条
+					"scrollIndicator": "none"
+				}
+			}
+
+		},
+		{
+			"path": "pages/mine/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					//下面这句代码完美解决软键盘把fixed顶起问题
+					"softinputMode": "adjustResize",
+					"titleNView": false,
+					//app页面不显示滚动条
+					"scrollIndicator": "none"
+				}
+			}
+
+		},
+		{
+			"path": "pages/mine/me",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					//下面这句代码完美解决软键盘把fixed顶起问题
+					"softinputMode": "adjustResize",
+					"titleNView": false,
+					//app页面不显示滚动条
+					"scrollIndicator": "none"
+				}
+			}
+
+		},
+		{
+			"path": "pages/mine/nextGrade",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					//下面这句代码完美解决软键盘把fixed顶起问题
+					"softinputMode": "adjustResize",
+					"titleNView": false,
+					//app页面不显示滚动条
+					"scrollIndicator": "none"
+				}
+			}
+
+		},
+		{
+			"path": "pages/mine/invitation",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					//下面这句代码完美解决软键盘把fixed顶起问题
+					"softinputMode": "adjustResize",
+					"titleNView": false,
+					//app页面不显示滚动条
+					"scrollIndicator": "none"
+				}
+			}
+
+		},
+		{
+			"path": "pages/mine/safe",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					//下面这句代码完美解决软键盘把fixed顶起问题
+					"softinputMode": "adjustResize",
+					"titleNView": false,
+					//app页面不显示滚动条
+					"scrollIndicator": "none"
+				}
+			}
+
+		},
+		{
+			"path": "pages/safe/pwd",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					//下面这句代码完美解决软键盘把fixed顶起问题
+					"softinputMode": "adjustResize",
+					"titleNView": false,
+					//app页面不显示滚动条
+					"scrollIndicator": "none"
+				}
+			}
+
+		},
+		{
+			"path": "pages/safe/fundpwd",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					//下面这句代码完美解决软键盘把fixed顶起问题
+					"softinputMode": "adjustResize",
+					"titleNView": false,
+					//app页面不显示滚动条
+					"scrollIndicator": "none"
+				}
+			}
+
+		},
+		{
+			"path": "pages/mine/bindcard",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					//下面这句代码完美解决软键盘把fixed顶起问题
+					"softinputMode": "adjustResize",
+					"titleNView": false,
+					//app页面不显示滚动条
+					"scrollIndicator": "none"
+				}
+			}
+
+		},
+		{
+			"path": "pages/mine/record",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					//下面这句代码完美解决软键盘把fixed顶起问题
+					"softinputMode": "adjustResize",
+					"titleNView": false,
+					//app页面不显示滚动条
+					"scrollIndicator": "none"
+				}
+			}
+
+		}, {
+			"path": "pages/sevice/sevice",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					//下面这句代码完美解决软键盘把fixed顶起问题
+					"softinputMode": "adjustResize",
+					"titleNView": false,
+					//app页面不显示滚动条
+					"scrollIndicator": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/article/job",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					//下面这句代码完美解决软键盘把fixed顶起问题
+					"softinputMode": "adjustResize",
+					"titleNView": false,
+					//app页面不显示滚动条
+					"scrollIndicator": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/article/aboutus",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					//下面这句代码完美解决软键盘把fixed顶起问题
+					"softinputMode": "adjustResize",
+					"titleNView": false,
+					//app页面不显示滚动条
+					"scrollIndicator": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/article/agent",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					//下面这句代码完美解决软键盘把fixed顶起问题
+					"softinputMode": "adjustResize",
+					"titleNView": false,
+					//app页面不显示滚动条
+					"scrollIndicator": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/article/company",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					//下面这句代码完美解决软键盘把fixed顶起问题
+					"softinputMode": "adjustResize",
+					"titleNView": false,
+					//app页面不显示滚动条
+					"scrollIndicator": "none"
+				}
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#fff"
+		// ,"maxWidth":"750"
+	},
+	"tabBar": {
+		// "custom": true, 
+		"color": "#6f7b9a",
+		"selectedColor": "#1989fa",
+		"borderStyle": "#FFF",
+		// "opacity": "1",
+		// "backgroundColor": "#F8F8F8",
+		"backgroundColor": "#fff",
+		"list": [{
+				"pagePath": "pages/home/index",
+				"iconPath": "static/images/home1.png",
+				"selectedIconPath": "static/images/home2.png",
+				"text": "%tabar.home%"
+			},
+			{
+				"pagePath": "pages/recharge/index",
+				"iconPath": "static/images/match1.png",
+				"selectedIconPath": "static/images/match2.png",
+				"text": "%tabar.recharge%"
+			},
+			{
+				"pagePath": "pages/get/index",
+				"iconPath": "static/images/sd.png",
+				"selectedIconPath": "static/images/sd.png",
+				"text": "%tabar.get%"
+			},
+			{
+				"pagePath": "pages/order/index",
+				"iconPath": "static/images/bet1.png",
+				"selectedIconPath": "static/images/bet2.png",
+				"text": "%tabar.task%"
+			}, {
+				"pagePath": "pages/mine/index",
+				"iconPath": "static/images/my1.png",
+				"selectedIconPath": "static/images/my2.png",
+				"text": "%tabar.mine%"
+			}
+		]
+		// ,"midButton": {
+		// 	"width": "75px",
+		// 	"height": "85px",
+		// 	"text": "文字",
+		// 	"iconPath": "static/images/sd.png",
+		// 	"iconWidth": "55px"
+		// 	// "backgroundImage": "static/images/sd.png"
+		// }
+	}
+}

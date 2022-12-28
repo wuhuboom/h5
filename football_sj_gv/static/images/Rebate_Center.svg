@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="27px" height="28px" viewBox="0 0 27 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>线性标签</title>
+    <defs>
+        <path d="M10.4134329,19.9062933 L4.29328714,13.7929606 C4.1055098,13.6053923 4,13.3508696 4,13.0854602 L4,6 C4,4.8954305 4.8954305,4 6,4 L13.0857864,4 C13.3510029,4 13.6053568,4.10535684 13.7928932,4.29289322 L19.9123713,10.4123713 C21.0850051,11.5828833 21.0850051,13.4823782 19.9134322,14.6539511 C19.9130785,14.6543048 19.9127247,14.6546585 19.9113104,14.6539506 L14.6538304,19.9061731 C13.4825477,21.0762845 11.5847819,21.0763383 10.4134329,19.9062933 Z" id="path-1"></path>
+        <filter x="-13.9%" y="-13.9%" width="120.8%" height="120.9%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="3" dy="0" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.909803922   0 0 0 0 0.945098039   0 0 0 0 0.996078431  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="电商icon" transform="translate(-230.000000, -222.000000)">
+            <g id="线性标签" transform="translate(230.000000, 222.000000)">
+                <g id="编组" transform="translate(3.000000, 4.000000)">
+                    <rect id="矩形" x="0" y="0" width="24" height="24"></rect>
+                    <g id="路径" stroke-linejoin="round">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use stroke="#2A83FC" stroke-width="2" xlink:href="#path-1"></use>
+                    </g>
+                    <path d="M10.8103884,8.34805862 C11.3626731,8.34805862 11.8103884,8.79577387 11.8103884,9.34805862 L11.8103884,12.3480586 C11.8103884,12.9003434 11.3626731,13.3480586 10.8103884,13.3480586 C10.2581036,13.3480586 9.81038837,12.9003434 9.81038837,12.3480586 L9.81038837,9.34805862 C9.81038837,8.79577387 10.2581036,8.34805862 10.8103884,8.34805862 Z" id="矩形" fill="#2AD2FC" transform="translate(10.810388, 10.848059) rotate(-45.000000) translate(-10.810388, -10.848059) "></path>
+                </g>
+                <path d="M1,7 C1.55228475,7 2,7.44771525 2,8 C2,8.55228475 1.55228475,9 1,9 C0.44771525,9 0,8.55228475 0,8 C0,7.44771525 0.44771525,7 1,7 Z M26,0 C26.5522847,0 27,0.44771525 27,1 C27,1.55228475 26.5522847,2 26,2 C25.4477153,2 25,1.55228475 25,1 C25,0.44771525 25.4477153,0 26,0 Z" id="形状结合" fill="#2A83FC"></path>
+                <circle id="椭圆形备份-5" fill="#2AD2FC" cx="2" cy="4" r="1"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

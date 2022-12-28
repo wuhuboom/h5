@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="81px" height="81px" viewBox="0 0 81 81" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 11备份</title>
+    <defs>
+        <linearGradient x1="62.2100178%" y1="100%" x2="31.9885889%" y2="13.7019894%" id="linearGradient-1">
+            <stop stop-color="#CA962E" offset="0%"></stop>
+            <stop stop-color="#FFD37D" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板备份-17" transform="translate(-157.000000, -121.000000)">
+            <g id="编组-11备份" transform="translate(157.000000, 121.000000)">
+                <circle id="椭圆形备份-3" fill="url(#linearGradient-1)" fill-rule="nonzero" cx="40.5" cy="40.5" r="40.5"></circle>
+                <path d="M40.5001187,41.175 C33.7621751,41.175 28.35,35.7176206 28.35,29.025 C28.35,22.3323794 33.7621751,16.875 40.5001187,16.875 C47.2378249,16.875 52.65,22.3323794 52.65,29.025 C52.65,35.7176206 47.2378249,41.175 40.5001187,41.175 Z M20.25,55.35 C20.25,49.7580703 24.5312297,45.225 29.8124927,45.225 L51.1875829,45.225 C54.6039501,45.225 57.7606712,47.1548754 59.468885,50.287372 C61.1770383,53.4201246 61.1770383,57.2798754 59.468885,60.412628 C57.7606712,63.5451246 54.6039501,65.475 51.1875829,65.475 L29.8124927,65.475 C24.533828,65.4685381 20.2561633,60.9392426 20.25,55.35 Z" id="wodedamaijihuo-(1)" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

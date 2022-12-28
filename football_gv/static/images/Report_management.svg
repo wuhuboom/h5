@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1024 1024" style="enable-background:new 0 0 1024 1024;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:url(#SVGID_2_);}
+</style>
+<g>
+	<g>
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="675.8875" y1="744.3748" x2="406.1512" y2="474.6385">
+			<stop  offset="0" style="stop-color:#0056F7"/>
+			<stop  offset="0.1657" style="stop-color:#0260F7"/>
+			<stop  offset="0.447" style="stop-color:#067BF7"/>
+			<stop  offset="0.8075" style="stop-color:#0DA6F7"/>
+			<stop  offset="1" style="stop-color:#11C0F7"/>
+		</linearGradient>
+		<path class="st0" d="M465.9,714.6c-17.6,0-32-14.4-32-32s14.4-32,32-32h226.6c17.6,0,32,14.4,32,32c-0.1,17.7-14.5,32-32,32H465.9
+			z M389.6,568.5c-17.6,0-32-14.4-32-32c0-17.6,14.4-32,32-32h226.6c17.6,0,32,14.4,32,32c0,17.7-14.4,32-32,32H389.6z"/>
+		<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="847.2018" y1="848.6451" x2="136.2428" y2="137.6862">
+			<stop  offset="0" style="stop-color:#0056F7"/>
+			<stop  offset="0.1657" style="stop-color:#0260F7"/>
+			<stop  offset="0.447" style="stop-color:#067BF7"/>
+			<stop  offset="0.8075" style="stop-color:#0DA6F7"/>
+			<stop  offset="1" style="stop-color:#11C0F7"/>
+		</linearGradient>
+		<path class="st1" d="M258.4,960c-68.3,0-123.9-55.6-123.9-124V190.8c0-68.4,55.6-124,123.9-124h507c68.3,0,123.9,55.6,123.9,124
+			v107.4c0,37-14.2,68.3-41,90.6c-26,21.5-62.6,32.8-106,32.8H465.7c-17.5,0-31.8-14.3-31.8-31.8s14.3-31.8,31.8-31.8h276.6
+			c28.3,0,51-6.3,65.4-18.1c12-10,18.1-24,18.1-41.7V190.8c0-33.3-27.1-60.4-60.3-60.4h-507c-33.3,0-60.3,27.1-60.3,60.4v645.1
+			c0,33.3,27.1,60.4,60.3,60.4h368.7c109.5,0,198.6-89.1,198.6-198.6V534c18.7-28.4,63.7-7,63.7-0.1v163.7
+			c0,70-27.3,135.8-76.8,185.5C763,932.7,697,960,627.1,960H258.4z"/>
+	</g>
+</g>
+</svg>

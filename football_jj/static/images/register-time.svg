@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>yiliaohangyedeICON-</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#E246F2" offset="0%"></stop>
+            <stop stop-color="#AF00B2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#E246F2" offset="0%"></stop>
+            <stop stop-color="#AF00B2" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="个人资料" transform="translate(-15.000000, -296.000000)">
+            <g id="yiliaohangyedeICON-" transform="translate(15.000000, 296.000000)">
+                <path d="M0,16.5001147 C0,25.6127636 7.38724665,33 16.5000918,33 C25.6127533,33 33,25.6127636 33,16.5001147 C33,7.38723638 25.6127533,0 16.5000918,0 C7.38724665,0 0,7.38723638 0,16.5001147 Z" id="Fill-1" fill="url(#linearGradient-1)" opacity="0.218200684"></path>
+                <path d="M18.6340201,14.8635551 C20.3318681,13.918031 21.1653679,11.9749199 20.6646362,10.1298609 C20.1639539,8.28485019 18.4543588,7 16.5000987,7 C14.5456412,7 12.8360954,8.28485019 12.3353638,10.1298609 C11.8346815,11.9749199 12.6683293,13.918031 14.3659799,14.8635551 C10.8259133,15.0302052 8,17.886783 8,21.3795432 C8.00251723,23.9303466 10.1191141,25.9975415 12.7308159,26 L20.2693815,26 C22.8810833,25.9975415 24.9976802,23.9303466 25,21.3795432 C25,17.886783 22.1696446,15.0302052 18.6340201,14.8635551 Z" id="Fill-2" fill="url(#linearGradient-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="27px" height="28px" viewBox="0 0 27 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>线性订单</title>
+    <defs>
+        <path d="M16.52495,4.5 C18.4441671,4.5 20,6.05583288 20,7.97505 L20,15.6351351 C20,18.3965589 17.7614237,20.6351351 15,20.6351351 L9,20.6351351 C6.23857625,20.6351351 4,18.3965589 4,15.6351351 L4,8.5 C4,6.290861 5.790861,4.5 8,4.5 L8,4.5 L8,4.5 L8.5,4.5 C8.5,5.21647751 9.08081978,5.7972973 9.7972973,5.7972973 L14.2027027,5.7972973 C14.9191802,5.7972973 15.5,5.21647751 15.5,4.5 L15.5,4.5 L15.5,4.5 L16.52495,4.5 Z" id="path-1"></path>
+        <filter x="-15.6%" y="-15.5%" width="131.2%" height="131.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="3" dy="0" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.909803922   0 0 0 0 0.945098039   0 0 0 0 0.996078431  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="电商icon" transform="translate(-116.000000, -222.000000)">
+            <g id="线性订单" transform="translate(116.000000, 222.000000)">
+                <g id="编组" transform="translate(3.000000, 4.000000)">
+                    <rect id="矩形" x="0" y="0" width="24" height="24"></rect>
+                    <g id="路径" stroke-linejoin="round">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use stroke="#2A83FC" stroke-width="2" xlink:href="#path-1"></use>
+                    </g>
+                    <rect id="矩形" stroke="#2A83FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x="8.5" y="3" width="7" height="3" rx="1.5"></rect>
+                    <polyline id="路径" stroke="#2AD2FC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="13.4998 9.5 9.5 13.5006 14.502 13.5006 10.50015 17.5009"></polyline>
+                </g>
+                <path d="M1,7 C1.55228475,7 2,7.44771525 2,8 C2,8.55228475 1.55228475,9 1,9 C0.44771525,9 0,8.55228475 0,8 C0,7.44771525 0.44771525,7 1,7 Z M26,0 C26.5522847,0 27,0.44771525 27,1 C27,1.55228475 26.5522847,2 26,2 C25.4477153,2 25,1.55228475 25,1 C25,0.44771525 25.4477153,0 26,0 Z" id="形状结合" fill="#2A83FC"></path>
+                <circle id="椭圆形备份-5" fill="#2AD2FC" cx="2" cy="4" r="1"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

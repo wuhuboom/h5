@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="20px" viewBox="0 0 21 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>日</title>
+    <defs>
+        <circle id="path-1" cx="10" cy="10" r="10"></circle>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板备份-17" transform="translate(-144.000000, -1537.000000)">
+            <g id="日" transform="translate(144.363636, 1537.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="蒙版" fill="#D8D8D8" xlink:href="#path-1"></use>
+                <g id="riben-(1)" mask="url(#mask-2)">
+                    <g transform="translate(-5.000000, 0.000000)">
+                        <path d="M0.123061234,20.1729795 L29.8769633,20.1729795 L29.8769633,0.124688314 L0.123061234,0.124688314 L0.123061234,20.1729795 Z M29.9889307,20.3249628 L29.9889307,20.1729795 L29.9889307,20.3249628 Z M0,20.3225806 L0,0 L30,0 L30,20.297643 L0,20.297643 L0,20.3225806 Z" id="Fill-1" fill="#353636"></path>
+                        <polygon id="Fill-2" fill="#FFFFFF" points="0 20.3225806 30 20.3225806 30 0 0 0"></polygon>
+                        <path d="M8.70967742,10.1613419 C8.70967742,13.6353804 11.5259642,16.4516129 15,16.4516129 C18.4741131,16.4516129 21.2903226,13.6353804 21.2903226,10.1613419 C21.2903226,6.68717449 18.4741131,3.87096774 15,3.87096774 C11.5259642,3.87096774 8.70967742,6.68717449 8.70967742,10.1613419 Z" id="Fill-3" fill="#C01D3C"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
