@@ -197,10 +197,23 @@
 				}
 			},
 			ngnToUsdtMoney() {
-
 				if (this.inputRechargeAmount) {
+					let returnAmountStr = ""
 					// return this.inputRechargeAmount / this.usdtMoneyRate
-					return this.inputRechargeAmount * this.usdtMoneyRate
+					let reAmountStr = (this.inputRechargeAmount * this.usdtMoneyRate).toString()
+					// console.log("reAmountStr", reAmountStr, typeof reAmountStr);
+					reAmountStr = reAmountStr.split('.')
+					// console.log("reAmountStr", reAmountStr, reAmountStr[0], reAmountStr[1]);
+					let leftAmount = reAmountStr[0]
+					if (reAmountStr[1]) {
+						let saveToStr = reAmountStr[1].substring(0, 2)
+						returnAmountStr = leftAmount + "." + saveToStr
+					} else {
+						returnAmountStr = reAmountStr[0]
+					}
+
+					return returnAmountStr
+					// return this.inputRechargeAmount * this.usdtMoneyRate 
 				} else {
 					return 0.00
 				}
