@@ -143,7 +143,7 @@
 						<view class="statisticsResultTableBoxBody">
 							<view class="statisticsResultTableBoxBodyContent">
 								<view class="statisticsResultTableBoxBodyCell">
-									{{cumulativeDiscount}}
+									{{cumulativeDiscount | moneyFormat}}
 								</view>
 							</view>
 						</view>
