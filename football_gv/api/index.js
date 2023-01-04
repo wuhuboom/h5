@@ -211,10 +211,26 @@ export const dataCenterReq = (queryParam, token) => {
 	return ajax(requestCurr + '/player/data_center', queryParam, 'POST', token)
 }
 
-// 数据中心下级详情
+// 达标接口
+export const aimListReq = (queryParam, token) => {
+	return ajax(requestCurr + '/player/aim/list', queryParam, 'POST', token)
+}
+
+// 不活跃人数接口
+export const inactiveListReq = (queryParam, token) => {
+	return ajax(requestCurr + '/player/inactive/list', queryParam, 'POST', token)
+}
+
+// 数据中心下级详情1
 export const dataCenterDetailReq = (queryParam, token) => {
 	return ajax(requestCurr + '/player/data_center/detail', queryParam, 'POST', token)
 }
+
+// 数据中心下级详情2
+export const dataCenterDetailTwoReq = (queryParam, token) => {
+	return ajax(requestCurr + '/player/data_center/detail2', queryParam, 'POST', token)
+}
+
 
 // 返佣中心-提取
 export const rebateDrawReq = (queryParam, token) => {

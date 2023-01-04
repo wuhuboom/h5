@@ -107,7 +107,11 @@
 	}
 </script>
 
-<style>
+<style lang="scss">
+	/* 注意要写在第一行，同时给style标签加入lang="scss"属性 */
+	@import './tuniao-ui/index.scss';
+	@import './tuniao-ui/iconfont.css';
+
 	/* @import url("~@/common/animate.css"); */
 	@import 'uview-ui/theme.scss';
 	/*每个页面公共css */
@@ -135,8 +139,8 @@
 	}
 
 	/* uni-tabbar.uni-tabbar-bottom .uni-tabbar {
-		border-top-left-radius: 30px;
-		border-top-right-radius: 30px;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
 	} */
 
 	::-webkit-scrollbar {
@@ -147,9 +151,9 @@
 
 
 
-	/* 	@font-face{
-		font-family:'SimHei';
-	    src: url('/ttf_fonts/SimHei.ttf') 
-	    format('truetype');
+	/* @font-face{
+	font-family:'SimHei';
+	src: url('/ttf_fonts/SimHei.ttf')
+	format('truetype');
 	} */
 </style>

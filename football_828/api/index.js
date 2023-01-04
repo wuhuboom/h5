@@ -209,6 +209,13 @@ export const dataCenterDetailReq = (queryParam, token) => {
 	return ajax(requestCurr + '/player/data_center/detail', queryParam, 'POST', token)
 }
 
+// 数据中心下级详情2
+export const dataCenterDetailTwoReq = (queryParam, token) => {
+	return ajax(requestCurr + '/player/data_center/detail2', queryParam, 'POST', token)
+}
+
+
+
 // 返佣中心-提取
 export const rebateDrawReq = (queryParam, token) => {
 	return ajax(requestCurr + '/player/rebate_draw', queryParam, 'POST', token)

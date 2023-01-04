@@ -803,6 +803,19 @@
 	"backapi.self.rebate.top.content.total.text": "Total Rebate",
 	"backapi.self.rebate.top.content.week.text": "Rebate This Week",
 	"backapi.self.rebate.top.content.today.text": "Today Rebate",
-	"backapi.self.rebate.top.content.lastweek.text": "Last Rebate"
+	"backapi.self.rebate.top.content.lastweek.text": "Last Rebate",
+
+	"backapi.self.statistics.top.title.text": "List of requirement met",
+	"backapi.self.statistics.top.content.monthAim.text": "Requirement met this month",
+	"backapi.self.statistics.top.content.monthUnAim.text": "Requirement not met this month ",
+	"backapi.self.statistics.top.content.playerName.text": "Member account",
+	"backapi.self.statistics.top.content.aimDays.text": "Days of requirement met",
+	"backapi.self.statistics.top.content.not.active.person.count.text": "Number of inactive member",
+	"backapi.self.statistics.top.content.not.active.person.list.text": "List of inactive member",
+	"backapi.self.statistics.top.content.reg.time.text": "Registration time",
+	"backapi.self.statistics.top.content.sub.level1.text": "Level 1 Member",
+	"backapi.self.statistics.top.content.sub.level2.text": "Level 2 Member",
+	"backapi.self.statistics.top.content.sub.level3.text": "Level 3 Member",
+	"backapi.self.alert.fast.access.tip.text": "The access frequency is too fast, please try again later"
 
 }

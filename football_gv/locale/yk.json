@@ -815,6 +815,20 @@
 	"backapi.self.rebate.top.content.total.text": "загальна знижка",
 	"backapi.self.rebate.top.content.week.text": "Знижка цього тижня",
 	"backapi.self.rebate.top.content.today.text": "Сьогоднішня знижка",
-	"backapi.self.rebate.top.content.lastweek.text": "Остання знижка"
+	"backapi.self.rebate.top.content.lastweek.text": "Остання знижка",
+
+	"backapi.self.statistics.top.title.text": "Перелік невідповідностей",
+	"backapi.self.statistics.top.content.monthAim.text": "Досягнуто цього місяця",
+	"backapi.self.statistics.top.content.monthUnAim.text": "Пропустив цей місяць",
+	"backapi.self.statistics.top.content.playerName.text": "обліковий запис учасника",
+	"backapi.self.statistics.top.content.aimDays.text": "Днів для досягнення стандарту",
+	"backapi.self.statistics.top.content.not.active.person.count.text": "неактивний номер",
+	"backapi.self.statistics.top.content.not.active.person.list.text": "Список неактивних людей",
+	"backapi.self.statistics.top.content.reg.time.text": "Час реєстрації",
+	"backapi.self.statistics.top.content.sub.level1.text": "член першого класу",
+	"backapi.self.statistics.top.content.sub.level2.text": "Другорядний член",
+	"backapi.self.statistics.top.content.sub.level3.text": "Учасник рівня 3",
+	"backapi.self.alert.fast.access.tip.text": "Частота доступу занадто висока, спробуйте пізніше"
+
 
 }

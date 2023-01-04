@@ -14,9 +14,14 @@
 
 
 		<view class="statisticsMain">
-			<u-tabs :list="tabList" :is-scroll="true" :current="current" :gutter="30" :bold="false" bg-color="#00111c"
-				font-size="20" :item-width="200" :bar-width="140" :bar-height="2" inactive-color="#FFFFFF"
-				active-color="#3d8dfe" @change="tabChange"></u-tabs>
+			<!-- <tn-tabs :list="tabList" :isScroll="true" :current="current" name="tab-name" inactive-color="#FFFFFF"
+				active-color="#3d8dfe" @change="tabChange" :showBar="false">
+			</tn-tabs> -->
+			<!-- :item-width="200" :bar-width="140" :gutter="30"-->
+			<u-tabs :list="tabList" :is-scroll="true" :current="current" :bold="false" bg-color="#00111c" font-size="20"
+				:bar-height="2" :item-width="200" :bar-width="140" :gutter="30" inactive-color="#FFFFFF"
+				active-color="#3d8dfe" @change="tabChange">
+			</u-tabs>
 
 			<view class="statisticsContainer">
 				<!-- <view class="statisticsSearchBox">
@@ -98,38 +103,102 @@
 						</view>
 					</view>
 					<view class="statisticsResultTableBox">
-						<view class="statisticsResultTableBoxHeader">
+						<view class="statisticsResultTableBoxHeader" style="justify-content: space-around;">
 							<view class="statisticsResultTableBoxHeaderCell">
 								{{$t('user.statistics.center.data.head.amountofwin.text')}}
 							</view>
-							<view class="statisticsResultTableBoxHeaderCell">
+							<!-- 	<view class="statisticsResultTableBoxHeaderCell">
 								{{$t('user.statistics.center.data.head.activityaward.text')}}
 							</view>
 							<view class="statisticsResultTableBoxHeaderCell">
 								{{$t('user.statistics.center.data.head.activitynum.text')}}
-							</view>
+							</view> -->
+
 							<view class="statisticsResultTableBoxHeaderCell">
-								{{$t('user.statistics.center.data.head.unregnum.text')}}
+								{{$t('backapi.self.statistics.top.content.monthAim.text')}}
+							</view>
+
+							<view class="statisticsResultTableBoxHeaderCell">
+								{{$t('backapi.self.statistics.top.content.not.active.person.count.text')}}
+							</view>
+
+							<view class="statisticsResultTableBoxHeaderCell">
+								{{$t('backapi.self.statistics.top.content.monthUnAim.text')}}
 							</view>
 						</view>
 						<view class="statisticsResultTableBoxBody">
-							<view class="statisticsResultTableBoxBodyContent">
+							<view class="statisticsResultTableBoxBodyContent" style="justify-content: space-around;">
 								<view class="statisticsResultTableBoxBodyCell">
-									{{cumulativeWinning}}
+									{{cumulativeWinning | moneyFormat}}
 								</view>
-								<view class="statisticsResultTableBoxBodyCell">
-									{{cumulativeActivity}}
+								<!-- <view class="statisticsResultTableBoxBodyCell">
+									{{cumulativeActivity | moneyFormat}}
 								</view>
 								<view class="statisticsResultTableBoxBodyCell">
 									{{playerActive}}
-								</view>
+								</view> -->
+
+
 								<view class="statisticsResultTableBoxBodyCell">
+									{{monthAimCount}}
+								</view>
+
+								<view class="statisticsResultTableBoxBodyCell" @click="inactiveClick"
+									style="color: red;">
 									{{playerOffline}}
+								</view>
+
+								<view class="statisticsResultTableBoxBodyCell" @click="unAimClick" style="color: red;">
+									{{monthUnAimCount}}
 								</view>
 							</view>
 						</view>
 					</view>
+
+					<!-- 	<view class="statisticsResultTableBox">
+						<view class="statisticsResultTableBoxHeader" style="justify-content: space-around;">
+							<view class="statisticsResultTableBoxHeaderCell" style="width: auto;">
+								{{$t('backapi.self.statistics.top.content.monthAim.text')}}
+							</view>
+							<view class="statisticsResultTableBoxHeaderCell" style="width: auto;">
+								{{$t('backapi.self.statistics.top.content.monthUnAim.text')}}
+							</view>
+						</view>
+						<view class="statisticsResultTableBoxBody">
+							<view class="statisticsResultTableBoxBodyContent" style="justify-content: space-around;">
+								<view class="statisticsResultTableBoxBodyCell">
+									{{monthAimCount}}
+								</view>
+								<view class="statisticsResultTableBoxBodyCell" @click="unAimClick" style="color: red;">
+									{{monthUnAimCount}}
+								</view>
+							</view>
+						</view>
+					</view> -->
+
 					<view class="statisticsResultTableBox">
+						<view class="statisticsResultTableBoxHeader" style="justify-content: space-around;">
+							<view class="statisticsResultTableBoxHeaderCell" style="width: 30%;">
+								{{$t('user.statistics.center.data.head.discoutedprice.text')}}
+							</view>
+							<view class="statisticsResultTableBoxHeaderCell" style="width: 70%;color: #3d8dfe;"
+								@click="goToLevelDetail">
+								{{$t('user.statistics.center.data.head.lowerlevel.text')}} >
+							</view>
+						</view>
+						<view class="statisticsResultTableBoxBody">
+							<view class="statisticsResultTableBoxBodyContent" style="justify-content: space-around;">
+								<view class="statisticsResultTableBoxBodyCell" style="width: 30%;">
+									{{cumulativeDiscount | moneyFormat}}
+								</view>
+								<view class="statisticsResultTableBoxBodyCell" style="width: 70%;color: #3d8dfe;">
+
+								</view>
+							</view>
+						</view>
+					</view>
+
+					<!-- <view class="statisticsResultTableBox">
 						<view class="statisticsResultTableBoxWrap">
 							<view class="statisticsResultTableBoxWrapContent">
 								<view class="statisticsResultTableBoxWrapCell">
@@ -147,7 +216,7 @@
 								</view>
 							</view>
 						</view>
-					</view>
+					</view> -->
 
 				</view>
 			</view>
@@ -202,6 +271,8 @@
 				playerActive: 0,
 				playerOffline: 0,
 				cumulativeDiscount: 0,
+				monthAimCount: 0,
+				monthUnAimCount: 0,
 
 				localLoginToken: null,
 				searchUsername: '',
@@ -221,6 +292,9 @@
 		// 		})
 		// 	}
 		// },
+
+
+
 		onShow() {
 
 			// this.localLoginToken = this.$store.state.userInfo.token
@@ -229,7 +303,7 @@
 			// 初始化语言
 			this.initLang()
 
-
+			// this.current = 0;
 			// 初始化数据
 			this.getStatissticsData(0)
 
@@ -255,6 +329,7 @@
 				}, {
 					name: this.$t('user.statistics.center.nearly30.text'),
 				}]
+
 
 			},
 			goBackBtnClick() {
@@ -300,6 +375,10 @@
 					this.playerOffline = resR.data.playerOffline
 					this.cumulativeDiscount = resR.data.cumulativeDiscount
 
+					this.monthAimCount = resR.data.monthAim
+					this.monthUnAimCount = resR.data.monthUnAim
+
+
 				} else if (resR.code === 402 || resR.code === 403) {
 					this.logout()
 					uni.showToast({
@@ -314,9 +393,23 @@
 					});
 				}
 			},
+			inactiveClick() {
+				uni.navigateTo({
+					url: '/pages/user/inactiveList?timenum=' + this.current,
+					animationType: 'pop-in',
+					animationDuration: 200
+				})
+			},
+			unAimClick() {
+				uni.navigateTo({
+					url: '/pages/user/aimList',
+					animationType: 'pop-in',
+					animationDuration: 200
+				})
+			},
 			goToLevelDetail() {
 				uni.navigateTo({
-					url: '/pages/user/subordinateDetail?searchName=' + this.searchUsername,
+					url: '/pages/user/subordinateDetailT',
 					animationType: 'pop-in',
 					animationDuration: 200
 				})
@@ -464,7 +557,7 @@
 	}
 
 	.statisticsResultTableBoxBodyContent {
-		height: 38px;
+		min-height: 38px;
 		display: flex;
 		align-items: center;
 	}
@@ -475,5 +568,9 @@
 		font-size: 12px;
 		word-break: break-all;
 		text-align: center;
+	}
+
+	/deep/ .u-tabs__wrapper__nav__line {
+		left: 25px;
 	}
 </style>

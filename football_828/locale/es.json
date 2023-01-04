@@ -817,5 +817,18 @@
 	"backapi.self.rebate.top.content.total.text": "Reembolso total",
 	"backapi.self.rebate.top.content.week.text": "Reembolso esta semana",
 	"backapi.self.rebate.top.content.today.text": "la rebaja de hoy",
-	"backapi.self.rebate.top.content.lastweek.text": "última rebaja"
+	"backapi.self.rebate.top.content.lastweek.text": "última rebaja",
+
+	"backapi.self.statistics.top.title.text": "Lista de incumplimientos",
+	"backapi.self.statistics.top.content.monthAim.text": "Logrado este mes",
+	"backapi.self.statistics.top.content.monthUnAim.text": "perdido este mes",
+	"backapi.self.statistics.top.content.playerName.text": "cuenta de miembro",
+	"backapi.self.statistics.top.content.aimDays.text": "Días para alcanzar el estándar",
+	"backapi.self.statistics.top.content.not.active.person.count.text": "número inactivo",
+	"backapi.self.statistics.top.content.not.active.person.list.text": "Lista de personas inactivas",
+	"backapi.self.statistics.top.content.reg.time.text": "tiempo de registro",
+	"backapi.self.statistics.top.content.sub.level1.text": "miembro de primera clase",
+	"backapi.self.statistics.top.content.sub.level2.text": "Miembro secundario",
+	"backapi.self.statistics.top.content.sub.level3.text": "Miembro de nivel 3",
+	"backapi.self.alert.fast.access.tip.text": "La frecuencia de acceso es demasiado rápida, inténtelo de nuevo más tarde"
 }

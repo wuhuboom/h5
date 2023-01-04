@@ -742,6 +742,22 @@
 	"backapi.self.rebate.top.content.total.text": "总返佣",
 	"backapi.self.rebate.top.content.week.text": "本周返佣",
 	"backapi.self.rebate.top.content.today.text": "今日返佣",
-	"backapi.self.rebate.top.content.lastweek.text": "上次返佣"
+	"backapi.self.rebate.top.content.lastweek.text": "上次返佣",
+
+	"backapi.self.statistics.top.title.text": "未达标列表",
+	"backapi.self.statistics.top.content.monthAim.text": "本月达标",
+	"backapi.self.statistics.top.content.monthUnAim.text": "本月未达标",
+	"backapi.self.statistics.top.content.playerName.text": "会员账号",
+	"backapi.self.statistics.top.content.aimDays.text": "达标天数",
+	"backapi.self.statistics.top.content.not.active.person.count.text": "不活跃人数",
+	"backapi.self.statistics.top.content.not.active.person.list.text": "不活跃人数列表",
+	"backapi.self.statistics.top.content.reg.time.text": "注册时间",
+	"backapi.self.statistics.top.content.sub.level1.text": "一级会员",
+	"backapi.self.statistics.top.content.sub.level2.text": "二级会员",
+	"backapi.self.statistics.top.content.sub.level3.text": "三级会员",
+	"backapi.self.alert.fast.access.tip.text": "访问频率太快,请稍后再试"
+
+
+
 
 }

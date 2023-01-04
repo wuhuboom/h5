@@ -1,7 +1,8 @@
 {
 	"easycom": {
 		// 下载安装方式
-		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue",
+		"^tn-(.*)": "@/tuniao-ui/components/tn-$1/tn-$1.vue"
 	},
 
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
@@ -405,8 +406,8 @@
 				}
 			}
 
-		}
-		// ,{
+		},
+		// {
 		// 	"path": "pages/user/subordinateDetail",
 		// 	"style": {
 		// 		"navigationBarTitleText": "",
@@ -420,8 +421,23 @@
 		// 		}
 		// 	}
 
-		// }
-		, {
+		// },
+		{
+			"path": "pages/user/subordinateDetailT",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					//下面这句代码完美解决软键盘把fixed顶起问题
+					"softinputMode": "adjustResize",
+					"titleNView": false,
+					//app页面不显示滚动条
+					"scrollIndicator": "none"
+				}
+			}
+
+		},
+		{
 			"path": "pages/user/Report/personalReport",
 			"style": {
 				"navigationBarTitleText": "",
@@ -435,21 +451,23 @@
 				}
 			}
 
-		}, {
-			"path": "pages/user/Report/teamReport",
-			"style": {
-				"navigationBarTitleText": "",
-				"enablePullDownRefresh": false,
-				"app-plus": {
-					//下面这句代码完美解决软键盘把fixed顶起问题
-					"softinputMode": "adjustResize",
-					"titleNView": false,
-					//app页面不显示滚动条
-					"scrollIndicator": "none"
-				}
-			}
+		},
+		// {
+		// 	"path": "pages/user/Report/teamReport",
+		// 	"style": {
+		// 		"navigationBarTitleText": "",
+		// 		"enablePullDownRefresh": false,
+		// 		"app-plus": {
+		// 			//下面这句代码完美解决软键盘把fixed顶起问题
+		// 			"softinputMode": "adjustResize",
+		// 			"titleNView": false,
+		// 			//app页面不显示滚动条
+		// 			"scrollIndicator": "none"
+		// 		}
+		// 	}
 
-		}, {
+		// }, 
+		{
 			"path": "pages/user/Report/accountList",
 			"style": {
 				"navigationBarTitleText": "",
@@ -588,6 +606,34 @@
 		},
 		{
 			"path": "pages/user/SIM_list",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					//下面这句代码完美解决软键盘把fixed顶起问题
+					"softinputMode": "adjustResize",
+					"titleNView": false,
+					//app页面不显示滚动条
+					"scrollIndicator": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/user/aimList",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					//下面这句代码完美解决软键盘把fixed顶起问题
+					"softinputMode": "adjustResize",
+					"titleNView": false,
+					//app页面不显示滚动条
+					"scrollIndicator": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/user/inactiveList",
 			"style": {
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false,

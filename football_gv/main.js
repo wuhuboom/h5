@@ -4,6 +4,9 @@ import App from './App'
 
 import Vue from 'vue'
 import uView from 'uview-ui';
+// 引入全局TuniaoUI
+import TuniaoUI from 'tuniao-ui'
+
 // 国际化 json 文件,
 import messages from './locale/index'
 import VueI18n from 'vue-i18n'
@@ -15,7 +18,9 @@ import initToast from "@/components/show-toast/initToast.js"
 import showToast from "@/components/show-toast/show-toast.vue"
 // 引入全局filter 方法
 import filters from '@/filter'
-
+// 引入TuniaoUI提供的vuex简写方法
+let vuexStore = require('@/store/$tn.mixin.js')
+Vue.mixin(vuexStore)
 
 
 filters(Vue); //注册使用filter
@@ -23,6 +28,7 @@ Vue.config.productionTip = false
 Vue.prototype.$store = store
 App.mpType = 'app'
 Vue.use(uView)
+Vue.use(TuniaoUI)
 initModal(Vue)
 Vue.component('show-modal', showModal)
 initToast(Vue);
