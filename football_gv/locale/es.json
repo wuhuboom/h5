@@ -782,6 +782,7 @@
 	"backapi.simCurrencyEditError": "la modificación del número de sim falló",
 	"backapi.simNotSet": "Número de sim no vinculado",
 	"backapi.justMinsWi": "La frecuencia de retirada es demasiado rápida, inténtalo de nuevo más tarde",
+	"backapi.gtMinMoney": "El monto de retiro excede el monto máximo de retiro",
 
 
 	"backapi.self.editStr": "La modificación",
@@ -831,7 +832,8 @@
 	"backapi.self.statistics.top.content.sub.level1.text": "miembro de primera clase",
 	"backapi.self.statistics.top.content.sub.level2.text": "Miembro secundario",
 	"backapi.self.statistics.top.content.sub.level3.text": "Miembro de nivel 3",
-	"backapi.self.alert.fast.access.tip.text": "La frecuencia de acceso es demasiado rápida, inténtelo de nuevo más tarde"
+	"backapi.self.alert.fast.access.tip.text": "La frecuencia de acceso es demasiado rápida, inténtelo de nuevo más tarde",
+	"backapi.self.account.list.data.last.login.text": "último acceso"
 
 
 }

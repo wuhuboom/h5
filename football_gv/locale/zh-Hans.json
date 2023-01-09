@@ -124,7 +124,7 @@
 	"user.report.manage.title.text": "报表管理",
 	"user.report.manage.list.rebate.center.text": "返利中心",
 	"user.report.manage.list.order.center.text": "订单中心",
-	"user.report.manage.list.data.center.text": "数据中心",
+	"user.report.manage.list.data.center.text": "123级数据中心",
 	"user.report.manage.list.account.change.center.text": "账变管理",
 	"user.report.manage.list.personal.center.text": "个人报表",
 	"user.report.manage.list.team.center.text": "团队报表",
@@ -194,7 +194,7 @@
 	"user.rebate.center.list.cell.wait.person.text": "等待结算",
 	"user.rebate.center.list.cell.receive.success.text": "返佣领取成功",
 
-	"user.statistics.center.title.text": "数据中心",
+	"user.statistics.center.title.text": "123级数据中心",
 	"user.statistics.center.today.text": "今日",
 	"user.statistics.center.yes.text": "昨天",
 	"user.statistics.center.nearly7.text": "近7日",
@@ -708,6 +708,7 @@
 	"backapi.simCurrencyEditError": "sim号修改失败",
 	"backapi.simNotSet": "未绑定sim号",
 	"backapi.justMinsWi": "提现频率太快,稍后再试",
+	"backapi.gtMinMoney": "提现金额超过最大提现金额",
 
 
 
@@ -755,7 +756,13 @@
 	"backapi.self.statistics.top.content.sub.level1.text": "一级会员",
 	"backapi.self.statistics.top.content.sub.level2.text": "二级会员",
 	"backapi.self.statistics.top.content.sub.level3.text": "三级会员",
-	"backapi.self.alert.fast.access.tip.text": "访问频率太快,请稍后再试"
+	"backapi.self.alert.fast.access.tip.text": "访问频率太快,请稍后再试",
+	"backapi.self.account.list.data.last.login.text": "最后一次登录",
+	"backapi.self.account.list.sort.swith.text": "最后一次登录排序方式",
+	"backapi.self.account.list.sort.swith.desc.text": "降序",
+	"backapi.self.account.list.sort.swith.asc.text": "升序"
+
+
 
 
 

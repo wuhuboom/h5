@@ -16,10 +16,12 @@
 				</view>
 			</block> -->
 		</uni-nav-bar>
-
+		<v-tabs v-model="current" :tabs="tabSimpleList" lineHeight="4rpx" bgColor="#00111c" color="#FFFFFF"
+			activeColor="#3d8dfe" @change="tabChange"></v-tabs>
+		<!-- 		
 		<u-tabs :list="tabList" :is-scroll="true" :current="current" :gutter="30" :bold="false" bg-color="#00111c"
 			font-size="20" :item-width="200" :bar-width="140" :bar-height="2" inactive-color="#FFFFFF"
-			active-color="#3d8dfe" @change="tabChange"></u-tabs>
+			active-color="#3d8dfe" @change="tabChange"></u-tabs> -->
 
 		<view class="user_container">
 			<view class="searchBox">
@@ -255,6 +257,7 @@
 				dataList: [],
 
 				initSearchInputText: this.$t('order.center.search.where.all.text'),
+				tabSimpleList: [],
 				tabList: [{
 					name: this.$t('order.center.tab.today.title.text'),
 				}, {
@@ -374,17 +377,26 @@
 				this.$i18n.locale = langStr
 
 				this.initSearchInputText = this.$t('order.center.search.where.all.text')
-				this.tabList = [{
-					name: this.$t('order.center.tab.today.title.text'),
-				}, {
-					name: this.$t('order.center.tab.yes.title.text'),
-				}, {
-					name: this.$t('order.center.tab.nearlySeven.title.text'),
-				}, {
-					name: this.$t('order.center.tab.nearlyTen.title.text'),
-				}, {
-					name: this.$t('order.center.tab.nearlyThirty.title.text'),
-				}]
+
+				this.tabSimpleList = [
+						this.$t('user.statistics.center.today.text'),
+						this.$t('user.statistics.center.yes.text'),
+						this.$t('user.statistics.center.nearly7.text'),
+						this.$t('user.statistics.center.nearly10.text'),
+						this.$t('user.statistics.center.nearly30.text')
+					],
+
+					this.tabList = [{
+						name: this.$t('order.center.tab.today.title.text'),
+					}, {
+						name: this.$t('order.center.tab.yes.title.text'),
+					}, {
+						name: this.$t('order.center.tab.nearlySeven.title.text'),
+					}, {
+						name: this.$t('order.center.tab.nearlyTen.title.text'),
+					}, {
+						name: this.$t('order.center.tab.nearlyThirty.title.text'),
+					}]
 
 				this.navTitle = this.$t('order.center.nav.title.text')
 

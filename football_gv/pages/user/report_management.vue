@@ -22,7 +22,11 @@
 
 <script>
 	import wrapListCell from '@/components/wrapListCellView/wrapListCellView.vue'
+	import {
+		accoutListMixin
+	} from '@/util/mixins.js'
 	export default {
+		mixins: [accoutListMixin], // 使用mixin
 		components: {
 			wrapListCell,
 		},
@@ -121,7 +125,14 @@
 					uni.navigateTo({
 						url: '/pages/user/Report/accountList',
 						animationType: 'pop-in',
-						animationDuration: 200
+						animationDuration: 200,
+						success: (res) => {
+							this.save_accountlist_from('report')
+							// 通过eventChannel向被打开页面传送数据	
+							res.eventChannel.emit('accountListEventClick', {
+								from: 'report'
+							})
+						},
 					})
 				}
 			}

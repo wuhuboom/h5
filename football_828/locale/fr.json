@@ -778,6 +778,8 @@
 	"backapi.simAlreadyBind": "Le numéro sim a été lié",
 	"backapi.simCurrencyEditError": "la modification du numéro sim a échoué",
 	"backapi.simNotSet": "Numéro de carte SIM non lié",
+	"backapi.justMinsWi": "La fréquence de retrait est trop rapide, réessayez plus tard",
+	"backapi.gtMinMoney": "Le montant du retrait dépasse le montant maximum du retrait",
 
 	"backapi.self.editStr": "Modifier",
 	"backapi.self.creatimer": "Définir la date",
@@ -825,6 +827,10 @@
 	"backapi.self.statistics.top.content.sub.level1.text": "membre de première classe",
 	"backapi.self.statistics.top.content.sub.level2.text": "Membre secondaire",
 	"backapi.self.statistics.top.content.sub.level3.text": "Membre de niveau 3",
-	"backapi.self.alert.fast.access.tip.text": "La fréquence d'accès est trop rapide, veuillez réessayer plus tard"
+	"backapi.self.alert.fast.access.tip.text": "La fréquence d'accès est trop rapide, veuillez réessayer plus tard",
+	"backapi.self.account.list.data.last.login.text": "Dernière connexion",
+	"backapi.self.account.list.sort.swith.text": "Dernière connexion Trier par",
+	"backapi.self.account.list.sort.swith.desc.text": "Ordre décroissant",
+	"backapi.self.account.list.sort.swith.asc.text": "Ordre croissant"
 
 }

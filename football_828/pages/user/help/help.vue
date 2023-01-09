@@ -52,22 +52,30 @@
 		data() {
 			return {
 				navTitle: this.$t('user.help.center.title.text'),
-				dataCenterList: [{
-					imageIcon: '../../../static/images/1.svg',
-					name: this.$t('user.help.center.recharge.withdraw.text')
-				}, {
-					imageIcon: '../../../static/images/2.svg',
-					name: this.$t('user.help.center.anti.correct.text')
-				}, {
-					imageIcon: '../../../static/images/6.svg',
-					name: this.$t('user.help.center.technical.support.text')
-				}, {
-					imageIcon: '../../../static/images/4.svg',
-					name: this.$t('user.help.center.privacy.solicy.text')
-				}, {
-					imageIcon: '../../../static/images/5.svg',
-					name: this.$t('user.help.center.rule.text')
-				}]
+				dataCenterList: [
+					// 	{
+					// 	imageIcon: '../../../static/images/1.svg',
+					// 	name: this.$t('user.help.center.recharge.withdraw.text'),
+					// 	id:0
+					// }, {
+					// 	imageIcon: '../../../static/images/2.svg',
+					// 	name: this.$t('user.help.center.anti.correct.text'),
+					// 	id:1
+					// },
+					{
+						imageIcon: '../../../static/images/6.svg',
+						name: this.$t('user.help.center.technical.support.text'),
+						id: 2
+					}, {
+						imageIcon: '../../../static/images/4.svg',
+						name: this.$t('user.help.center.privacy.solicy.text'),
+						id: 3
+					}, {
+						imageIcon: '../../../static/images/5.svg',
+						name: this.$t('user.help.center.rule.text'),
+						id: 4
+					}
+				]
 			}
 		},
 
@@ -81,9 +89,9 @@
 			},
 			wrapListCell_click(item, index) {
 				// console.log("index",index);
-				if (index === 0) {
+				if (item.id === 0) {
 
-				} else if (index === 1) {
+				} else if (item.id === 1) {
 					// uni.navigateTo({
 					// 	url: '/pages/customer/index',
 					// 	success: (res) => {
@@ -96,19 +104,19 @@
 					// 	animationType: 'slide-in-top',
 					// 	animationDuration: 200
 					// })
-				} else if (index === 2) {
+				} else if (item.id === 2) {
 					uni.navigateTo({
 						url: '/pages/user/help/technical_support',
 						animationType: 'slide-in-top',
 						animationDuration: 200
 					})
-				} else if (index === 3) {
+				} else if (item.id === 3) {
 					uni.navigateTo({
 						url: '/pages/user/help/privacy_policy',
 						animationType: 'slide-in-top',
 						animationDuration: 200
 					})
-				} else if (index === 4) {
+				} else if (item.id === 4) {
 					uni.navigateTo({
 						url: '/pages/user/help/user_notice',
 						animationType: 'slide-in-top',

@@ -17,11 +17,17 @@
 			<!-- <tn-tabs :list="tabList" :isScroll="true" :current="current" name="tab-name" inactive-color="#FFFFFF"
 				active-color="#3d8dfe" @change="tabChange" :showBar="false">
 			</tn-tabs> -->
-			<!-- :item-width="200" :bar-width="140" :gutter="30"-->
-			<u-tabs :list="tabList" :is-scroll="true" :current="current" :bold="false" bg-color="#00111c" font-size="20"
+
+			<v-tabs v-model="current" :tabs="tabSimpleList" lineHeight="4rpx" bgColor="#00111c" color="#FFFFFF"
+				activeColor="#3d8dfe" @change="tabChange"></v-tabs>
+
+			<!-- <fui-tabs :tabs="tabList" :short="false" :scroll="true" :current="current" background="#00111c" size="20"
+				color="#FFFFFF" selectedColor="#3d8dfe" leftNum="0" @change="fuiChange"></fui-tabs> -->
+
+			<!-- <u-tabs :list="tabList" :is-scroll="true" :current="current" :bold="false" bg-color="#00111c" font-size="20"
 				:bar-height="2" :item-width="200" :bar-width="140" :gutter="30" inactive-color="#FFFFFF"
 				active-color="#3d8dfe" @change="tabChange">
-			</u-tabs>
+			</u-tabs> -->
 
 			<view class="statisticsContainer">
 				<!-- <view class="statisticsSearchBox">
@@ -233,7 +239,8 @@
 	} from '@/api/index.js'
 	// import {mapState,mapMutations} from 'vuex'
 	import {
-		myMixin
+		myMixin,
+		accoutListMixin
 	} from '@/util/mixins.js'
 	export default {
 		data() {
@@ -246,6 +253,13 @@
 					"text-indent": "10px",
 					"color": "#fff"
 				},
+				tabSimpleList: [
+					this.$t('user.statistics.center.today.text'),
+					this.$t('user.statistics.center.yes.text'),
+					this.$t('user.statistics.center.nearly7.text'),
+					this.$t('user.statistics.center.nearly10.text'),
+					this.$t('user.statistics.center.nearly30.text')
+				],
 				tabList: [{
 					name: this.$t('user.statistics.center.today.text'),
 				}, {
@@ -279,7 +293,7 @@
 
 			}
 		},
-		mixins: [myMixin],
+		mixins: [myMixin, accoutListMixin],
 		// computed:{
 		// 	...mapState(['hasLogin'])
 		// },
@@ -303,7 +317,9 @@
 			// 初始化语言
 			this.initLang()
 
-			// this.current = 0;
+
+			this.current = 0
+
 			// 初始化数据
 			this.getStatissticsData(0)
 
@@ -339,8 +355,13 @@
 					animationDuration: 200
 				})
 			},
+			fuiChange(data) {
+				this.current = data.index;
+
+				this.getStatissticsData(this.current)
+			},
 			tabChange(index) {
-				// console.log("index",index);
+				// console.log("index", index);
 				this.current = index;
 
 				this.getStatissticsData(this.current)
@@ -409,9 +430,16 @@
 			},
 			goToLevelDetail() {
 				uni.navigateTo({
-					url: '/pages/user/subordinateDetailT',
+					url: '/pages/user/Report/accountList',
 					animationType: 'pop-in',
-					animationDuration: 200
+					animationDuration: 200,
+					success: (res) => {
+						this.save_accountlist_from('statistics')
+						// 通过eventChannel向被打开页面传送数据	
+						res.eventChannel.emit('accountListEventClick', {
+							from: 'statistics'
+						})
+					},
 				})
 			}
 		}

@@ -767,6 +767,7 @@
 	"backapi.simCurrencyEditError": "Sim number modification failed",
 	"backapi.simNotSet": "Unbound sim number",
 	"backapi.justMinsWi": "The withdrawal frequency is too fast, try again later",
+	"backapi.gtMinMoney": "The withdrawal amount exceeds the maximum withdrawal amount",
 
 
 	"backapi.self.editStr": "Edit",
@@ -816,6 +817,10 @@
 	"backapi.self.statistics.top.content.sub.level1.text": "Level 1 Member",
 	"backapi.self.statistics.top.content.sub.level2.text": "Level 2 Member",
 	"backapi.self.statistics.top.content.sub.level3.text": "Level 3 Member",
-	"backapi.self.alert.fast.access.tip.text": "The access frequency is too fast, please try again later"
+	"backapi.self.alert.fast.access.tip.text": "The access frequency is too fast, please try again later",
+	"backapi.self.account.list.data.last.login.text": "Last login",
+	"backapi.self.account.list.sort.swith.text": "Last Login Sort By",
+	"backapi.self.account.list.sort.swith.desc.text": "DESC",
+	"backapi.self.account.list.sort.swith.asc.text": "ASC"
 
 }

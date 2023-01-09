@@ -42,6 +42,20 @@
 				+ {{this.oldPhoneStr}}
 			</view>
 			<view class="item">
+				<!-- <image src="../../static/images/suo.svg" mode="" class="icon"></image> -->
+				<input type="password" style='width:0;height:0;min-height:0' />
+				<input type="text" autocomplete="off" style='width:0;height:0;min-height:0' />
+				<u-input type="text" :clearable="false" class="forgetPassword_item_input" :placeholder="phoneCodePlace"
+					:custom-style="customInputStyle" :placeholder-style="placeholderStyle" maxlength="4"
+					v-model="codeSmsStr" @input="inputSmsCodeChange" />
+				<view class="getCodeNum" @click="getSmsCodeClick">
+					{{defalutCodeTitle}}
+				</view>
+			</view>
+			<view class="tip">
+				{{codeSmsTip}}
+			</view>
+			<view class="item">
 				<view class="number">
 					<text class="codenumber" @click.stop="showAreaBool = !showAreaBool">+{{selectAreaNum}}</text>
 					<view class="phoneBox" :style="!showAreaBool ? 'display:none': null">
@@ -65,20 +79,7 @@
 			<view class="tip">
 				{{phoneTip}}
 			</view>
-			<view class="item">
-				<!-- <image src="../../static/images/suo.svg" mode="" class="icon"></image> -->
-				<input type="password" style='width:0;height:0;min-height:0' />
-				<input type="text" autocomplete="off" style='width:0;height:0;min-height:0' />
-				<u-input type="text" :clearable="false" class="forgetPassword_item_input" :placeholder="phoneCodePlace"
-					:custom-style="customInputStyle" :placeholder-style="placeholderStyle" maxlength="4"
-					v-model="codeSmsStr" @input="inputSmsCodeChange" />
-				<view class="getCodeNum" @click="getSmsCodeClick">
-					{{defalutCodeTitle}}
-				</view>
-			</view>
-			<view class="tip">
-				{{codeSmsTip}}
-			</view>
+
 			<!-- 	<view class="item">
 				<image src="../../static/images/suo.svg" mode="" class="icon"></image>
 				<input type="password" style='width:0;height:0;min-height:0' />
@@ -462,18 +463,18 @@
 				}
 			},
 			async getSmsCodeClick() {
-				if (!this.newPhone) {
-					uni.showToast({
-						icon: 'none',
-						title: this.$t('user.security.center.rule.phone.not.empty.text'),
-					});
-					return false
-				}
+				// if (!this.newPhone) {
+				// 	uni.showToast({
+				// 		icon: 'none',
+				// 		title: this.$t('user.security.center.rule.phone.not.empty.text'),
+				// 	});
+				// 	return false
+				// }
 
 				if (!this.timer) {
 					let reqParams = {}
-					reqParams.phone = this.selectAreaNum + this.newPhone
-					let resR = await phoneCodeReq(reqParams, this.localLoginToken)
+					// reqParams.phone = this.selectAreaNum + this.newPhone
+					let resR = await phoneCodeOnlineReq(reqParams, this.localLoginToken)
 					if (resR.code === 200) {
 						uni.showToast({
 							icon: 'none',

@@ -44,6 +44,7 @@ const store = new Vuex.Store({
 		addBankState_Bool: false,
 		addUsdtState_Bool: false,
 		addSimState_Bool: false,
+		accountListState_Bool: false,
 		searchTeamNameStr: '',
 		searchHisTeamNameStr: '',
 		matchAllNum: '',
@@ -53,10 +54,13 @@ const store = new Vuex.Store({
 		changHisAnimationFinishBool: false,
 
 
+
+
+
 		// 如果上面从本地获取的lifeData对象下有对应的属性，就赋值给state中对应的变量
 		// 加上vuex_前缀，是防止变量名冲突，也让人一目了然
 		vuex_user: lifeData.vuex_user ? lifeData.vuex_user : {
-			name: '图鸟'
+			name: 'tuniao'
 		},
 
 		// 如果vuex_version无需保存到本地永久存储，无需lifeData.vuex_version方式
@@ -71,7 +75,7 @@ const store = new Vuex.Store({
 	},
 	mutations: {
 		$tStore(state, payload) {
-		 // 判断是否多层调用，state中为对象存在的情况，例如user.info.score = 1
+			// 判断是否多层调用，state中为对象存在的情况，例如user.info.score = 1
 			let nameArr = payload.name.split('.')
 			let saveKey = ''
 			let len = nameArr.length
@@ -80,8 +84,8 @@ const store = new Vuex.Store({
 				for (let i = 1; i < len - 1; i++) {
 					obj = obj[nameArr[i]]
 				}
-		 	obj[nameArr[len - 1]] = payload.value
-		 	saveKey = nameArr[0]
+				obj[nameArr[len - 1]] = payload.value
+				saveKey = nameArr[0]
 			} else {
 				// 单层级变量
 				state[payload.name] = payload.value
@@ -195,6 +199,19 @@ const store = new Vuex.Store({
 			state.addSimState_Bool = false
 			uni.removeStorage({
 				key: 'queryAddSimUrlFrom',
+			});
+		},
+		save_accountlist_from(state, content) {
+			state.accountListState_Bool = true
+			uni.setStorage({
+				key: 'queryAccountListUrlFrom',
+				data: content
+			});
+		},
+		remove_accountlist_from(state, content) {
+			state.accountListState_Bool = false
+			uni.removeStorage({
+				key: 'queryAccountListUrlFrom',
 			});
 		},
 		save_addUsdt_from(state, content) {

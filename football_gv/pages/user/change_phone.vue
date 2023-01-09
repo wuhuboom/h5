@@ -19,6 +19,22 @@
 				<u-input type="text" disabled class="forgetPassword_item_input" :placeholder="loginPlace"
 					:custom-style="customInputStyle" maxlength="16" v-model="oldPhoneStr" />
 			</view>
+
+			<view class="forgetPassword_item codeview">
+				<view class="forgetPassword_item_title">
+					{{$t('user.change.phone.code.text')}}
+				</view>
+				<u-input type="text" :clearable="false" class="forgetPassword_item_input" :placeholder="phoneCodePlace"
+					:custom-style="customInputStyle" :placeholder-style="placeholderStyle" maxlength="4"
+					v-model="codeSmsStr" @input="inputConfPassChange" />
+				<view class="get_code_sms" @click="getSmsCodeClick">
+					{{defalutCodeTitle}}
+				</view>
+			</view>
+			<view class="errorTip">
+				{{codeSmsTip}}
+			</view>
+
 			<view class="forgetPassword_item">
 				<view class="forgetPassword_item_title">
 					{{$t('user.change.phone.new.phone.text')}}
@@ -40,20 +56,7 @@
 			<view class="errorTip">
 				{{newPhoneTip}}
 			</view>
-			<view class="forgetPassword_item codeview">
-				<view class="forgetPassword_item_title">
-					{{$t('user.change.phone.code.text')}}
-				</view>
-				<u-input type="text" :clearable="false" class="forgetPassword_item_input" :placeholder="phoneCodePlace"
-					:custom-style="customInputStyle" :placeholder-style="placeholderStyle" maxlength="4"
-					v-model="codeSmsStr" @input="inputConfPassChange" />
-				<view class="get_code_sms" @click="getSmsCodeClick">
-					{{defalutCodeTitle}}
-				</view>
-			</view>
-			<view class="errorTip">
-				{{codeSmsTip}}
-			</view>
+
 
 			<view :class="changeBtnColorBool ?'loginBtn active': 'loginBtn'"
 				@click="changeBtnColorBool && updateBtnClick()">
@@ -91,7 +94,8 @@
 		phoneBindReq,
 		playerInfoReq,
 		phoneCodeReq,
-		sysConfigReq
+		sysConfigReq,
+		phoneCodeOnlineReq
 	} from '../../api/index.js'
 	import {
 		myMixin,
@@ -278,19 +282,17 @@
 
 			},
 			async getSmsCodeClick() {
-				if (!this.newPhone) {
-					uni.showToast({
-						icon: 'none',
-						title: this.$t('user.security.center.rule.phone.not.empty.text'),
-					});
-					return false
-				}
-
-
+				// if (!this.newPhone) {
+				// 	uni.showToast({
+				// 		icon: 'none',
+				// 		title: this.$t('user.security.center.rule.phone.not.empty.text'),
+				// 	});
+				// 	return false
+				// }
 				if (!this.timer) {
 					let reqParams = {}
-					reqParams.phone = this.selectAreaNum + this.newPhone
-					let resR = await phoneCodeReq(reqParams, this.localLoginToken)
+					// reqParams.phone = this.selectAreaNum + this.newPhone
+					let resR = await phoneCodeOnlineReq(reqParams, this.localLoginToken)
 					if (resR.code === 200) {
 						uni.showToast({
 							icon: 'none',

@@ -166,7 +166,7 @@
 	"user.report.manage.title.text": "Gestion des rapports",
 	"user.report.manage.list.rebate.center.text": "Centre de commission",
 	"user.report.manage.list.order.center.text": "Centre de paris",
-	"user.report.manage.list.data.center.text": "Centre de données",
+	"user.report.manage.list.data.center.text": "Centre de données de niveau 123",
 	"user.report.manage.list.account.change.center.text": "Gestion de compte",
 	"user.report.manage.list.personal.center.text": "Rapports individuels",
 	"user.report.manage.list.team.center.text": "Rapports d'équipe",
@@ -238,7 +238,7 @@
 	"user.rebate.center.list.cell.wait.person.text": "En attente de règlement",
 	"user.rebate.center.list.cell.receive.success.text": "Les primes ont été reçus avec succès",
 
-	"user.statistics.center.title.text": "Centre de statistiques",
+	"user.statistics.center.title.text": "Centre de données de niveau 123",
 	"user.statistics.center.today.text": "Aujourd'hui",
 	"user.statistics.center.yes.text": "Hier",
 	"user.statistics.center.nearly7.text": "Ces 7 derniers jours",
@@ -779,6 +779,7 @@
 	"backapi.simCurrencyEditError": "la modification du numéro sim a échoué",
 	"backapi.simNotSet": "Numéro de carte SIM non lié",
 	"backapi.justMinsWi": "La fréquence de retrait est trop rapide, réessayez plus tard",
+	"backapi.gtMinMoney": "Le montant du retrait dépasse le montant maximum du retrait",
 
 
 	"backapi.self.editStr": "Modifier",
@@ -827,7 +828,11 @@
 	"backapi.self.statistics.top.content.sub.level1.text": "membre de première classe",
 	"backapi.self.statistics.top.content.sub.level2.text": "Membre secondaire",
 	"backapi.self.statistics.top.content.sub.level3.text": "Membre de niveau 3",
-	"backapi.self.alert.fast.access.tip.text": "La fréquence d'accès est trop rapide, veuillez réessayer plus tard"
+	"backapi.self.alert.fast.access.tip.text": "La fréquence d'accès est trop rapide, veuillez réessayer plus tard",
+	"backapi.self.account.list.data.last.login.text": "Dernière connexion",
+	"backapi.self.account.list.sort.swith.text": "Dernière connexion Trier par",
+	"backapi.self.account.list.sort.swith.desc.text": "Ordre décroissant",
+	"backapi.self.account.list.sort.swith.asc.text": "Ordre croissant"
 
 
 }

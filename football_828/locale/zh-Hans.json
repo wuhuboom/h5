@@ -784,6 +784,7 @@
 	"backapi.simCurrencyEditError": "sim号修改失败",
 	"backapi.simNotSet": "未绑定sim号",
 	"backapi.justMinsWi": "提现频率太快,稍后再试",
+	"backapi.gtMinMoney": "提现金额超过最大提现金额",
 
 
 	"backapi.self.editStr": "修改",
@@ -832,6 +833,10 @@
 	"backapi.self.statistics.top.content.sub.level1.text": "一级会员",
 	"backapi.self.statistics.top.content.sub.level2.text": "二级会员",
 	"backapi.self.statistics.top.content.sub.level3.text": "三级会员",
-	"backapi.self.alert.fast.access.tip.text": "访问频率太快,请稍后再试"
+	"backapi.self.alert.fast.access.tip.text": "访问频率太快,请稍后再试",
+	"backapi.self.account.list.data.last.login.text": "最后一次登录",
+	"backapi.self.account.list.sort.swith.text": "最后一次登录排序方式",
+	"backapi.self.account.list.sort.swith.desc.text": "降序",
+	"backapi.self.account.list.sort.swith.asc.text": "升序"
 
 }

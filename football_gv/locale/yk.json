@@ -779,6 +779,7 @@
 	"backapi.simCurrencyEditError": "не вдалося змінити номер сім-карти",
 	"backapi.simNotSet": "Неприв'язаний номер SIM",
 	"backapi.justMinsWi": "Частота виведення занадто висока, спробуйте пізніше",
+	"backapi.gtMinMoney": "Сума зняття перевищує максимальну суму зняття",
 
 
 	"backapi.self.editStr": "Внести зміни",
@@ -828,7 +829,8 @@
 	"backapi.self.statistics.top.content.sub.level1.text": "член першого класу",
 	"backapi.self.statistics.top.content.sub.level2.text": "Другорядний член",
 	"backapi.self.statistics.top.content.sub.level3.text": "Учасник рівня 3",
-	"backapi.self.alert.fast.access.tip.text": "Частота доступу занадто висока, спробуйте пізніше"
+	"backapi.self.alert.fast.access.tip.text": "Частота доступу занадто висока, спробуйте пізніше",
+	"backapi.self.account.list.data.last.login.text": "останній вхід"
 
 
 }

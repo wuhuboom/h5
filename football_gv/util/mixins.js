@@ -208,6 +208,17 @@ export const changePhoneMixin = {
 }
 
 
+// account_list专用
+export const accoutListMixin = {
+	computed: {
+		...mapState(['accountListState_Bool']),
+	},
+	methods: {
+		...mapMutations(['save_accountlist_from', 'remove_accountlist_from']),
+	}
+}
+
+
 // 全局修改标题
 export const changeTitleMixin = {
 	onShow() {

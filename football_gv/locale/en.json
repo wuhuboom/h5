@@ -164,7 +164,7 @@
 	"user.report.manage.title.text": "Report Management",
 	"user.report.manage.list.rebate.center.text": "Rebate Center",
 	"user.report.manage.list.order.center.text": "My Order",
-	"user.report.manage.list.data.center.text": "Data Center",
+	"user.report.manage.list.data.center.text": "Level 123 data center",
 	"user.report.manage.list.account.change.center.text": "Account Change Report",
 	"user.report.manage.list.personal.center.text": "Personal Report",
 	"user.report.manage.list.team.center.text": "Team Report",
@@ -236,7 +236,7 @@
 	"user.rebate.center.list.cell.wait.person.text": "Waiting for settlement",
 	"user.rebate.center.list.cell.receive.success.text": "Rebate Receive Success",
 
-	"user.statistics.center.title.text": "Data Center",
+	"user.statistics.center.title.text": "Level 123 data center",
 	"user.statistics.center.today.text": "Today",
 	"user.statistics.center.yes.text": "Yesterday",
 	"user.statistics.center.nearly7.text": "Nearly 7 day",
@@ -767,6 +767,7 @@
 	"backapi.simCurrencyEditError": "Sim number modification failed",
 	"backapi.simNotSet": "Unbound sim number",
 	"backapi.justMinsWi": "The withdrawal frequency is too fast, try again later",
+	"backapi.gtMinMoney": "The withdrawal amount exceeds the maximum withdrawal amount",
 
 	"backapi.self.editStr": "Edit",
 	"backapi.self.creatimer": "Add the date",
@@ -815,7 +816,11 @@
 	"backapi.self.statistics.top.content.sub.level1.text": "Level 1 Member",
 	"backapi.self.statistics.top.content.sub.level2.text": "Level 2 Member",
 	"backapi.self.statistics.top.content.sub.level3.text": "Level 3 Member",
-	"backapi.self.alert.fast.access.tip.text": "The access frequency is too fast, please try again later"
+	"backapi.self.alert.fast.access.tip.text": "The access frequency is too fast, please try again later",
+	"backapi.self.account.list.data.last.login.text": "Last login",
+	"backapi.self.account.list.sort.swith.text": "Last Login Sort By",
+	"backapi.self.account.list.sort.swith.desc.text": "DESC",
+	"backapi.self.account.list.sort.swith.asc.text": "ASC"
 
 
 

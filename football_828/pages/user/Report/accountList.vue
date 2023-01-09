@@ -32,16 +32,37 @@
 			</view>
 
 		</view>
-
-		<view class="content">
-			<view class="accountListContainer">
-				<view class="inputAndSerchContent">
-					<u-input class="inputContent" maxlength="30" v-model="searchUsername" :clearable="false" height="80"
-						:custom-style="customStyleInput" :placeholder="placeholderAccount"
-						placeholder-style="color:#999;font-size:12px" />
-					<u-icon class="iconContent" name="search" color="#fff" @click="searchWhereBtnClick">
-					</u-icon>
+		<view class="fixedContent">
+			<view class="sortContainer">
+				<view class="text">
+					{{$t("backapi.self.account.list.sort.swith.text")}}
 				</view>
+				<switch :checked="checkedSwitch" @change="switch1Change" />
+				<view class="result_text" :style="defaultSortNum === 1 ? 'color: #ffba00;' : 'color: #fff;'">
+					{{result_text_str}}
+				</view>
+			</view>
+			<view class="inputAndSerchContent">
+				<u-input class="inputContent" maxlength="30" v-model="searchUsername" :clearable="false" height="80"
+					:custom-style="customStyleInput" :placeholder="placeholderAccount"
+					placeholder-style="color:#999;font-size:12px" />
+				<u-icon class="iconContent" name="search" color="#fff" @click="searchWhereBtnClick">
+				</u-icon>
+			</view>
+
+			<view class="bankBox" @click="levelSelectClick">
+				<view class="t">
+					<text></text>
+					<text class="con">
+						{{searchStrSelect}}</text>
+				</view>
+				<u-icon name="arrow-right" color="#fff"></u-icon>
+			</view>
+
+		</view>
+		<view class="content">
+
+			<view class="accountListContainer">
 				<view class="tableBox">
 					<mescroll-body ref="mescrollRef" top="0" :topbar="false" bottom="0" :bottombar="true"
 						:safearea="false" @down="downCallback" @up="upCallback" :down="downOption" :up="upOption">
@@ -53,14 +74,14 @@
 								<view class="name">
 									<text class="username">{{item.username}}</text>
 									<text class="level"
-										:style="item.status === 1 ? 'color:#ffba00' :'color:#fff'">{{item.status === 1 ? $t('user.report.account.list.center.list.data.status.text') : $t('user.report.account.list.center.list.data.unable.text')}}</text>
+										:style="defaultSortNum === 1 ? 'color:#ffba00' :'color:#fff'">{{defaultSortNum === 1 ? $t('backapi.self.account.list.sort.swith.desc.text') : $t('backapi.self.account.list.sort.swith.asc.text')}}</text>
 								</view>
 								<text class="date">{{item.theNewLoginTime | timestampStr}}</text>
 							</view>
-							<view class="right-data">
+							<!-- <view class="right-data">
 								<text class="text">{{$t('user.report.account.list.center.list.head.money.text')}}</text>
 								<text class="money">{{item.balance | moneyFormat}}</text>
-							</view>
+							</view> -->
 
 						</view>
 					</mescroll-body>
@@ -71,6 +92,28 @@
 
 		</view>
 
+
+
+		<!-- 弹窗页面 -->
+		<u-popup v-model="levelPopBool" mode="bottom" width="315px" border-radius="10">
+			<view class="cards-pop">
+
+				<view class="card-list">
+					<view class="card" v-for="(item,index) in inputSearchListItemArray" :key="item.id"
+						@click="selectLevelClick(item)">
+						<view class="left">
+							<view class="card-name">
+								{{item.nameStr}}
+							</view>
+						</view>
+						<u-icon v-if="currentIndex === item.id" name="checkmark" color="#ffbc00"></u-icon>
+					</view>
+				</view>
+				<view class="" style="width: 100%;height: 30px;">
+
+				</view>
+			</view>
+		</u-popup>
 
 	</view>
 </template>
@@ -111,8 +154,24 @@
 				showListBool: false,
 				arrowClass: 'iconfont icon-arrow-down rightArrow',
 				arrowClassActive: 'iconfont icon-arrow-down rightArrow rightArrowActive',
-				currentIndex: 0,
+
 				dataAccountList: [],
+				result_text_str: this.$t('backapi.self.account.list.sort.swith.desc.text'),
+				currentIndex: 1,
+				searchStrSelect: this.$t('backapi.self.statistics.top.content.sub.level1.text'),
+				levelPopBool: false,
+				inputSearchListItemArray: [{
+					nameStr: this.$t('backapi.self.statistics.top.content.sub.level1.text'),
+					id: 1,
+				}, {
+					nameStr: this.$t('backapi.self.statistics.top.content.sub.level2.text'),
+					id: 2,
+				}, {
+					nameStr: this.$t('backapi.self.statistics.top.content.sub.level3.text'),
+					id: 3,
+				}],
+				checkedSwitch: true,
+				defaultSortNum: 1, //1默认desc,2asc
 
 				mescroll: null, // mescroll实例对象 (此行可删,mixins已默认)
 				// 下拉刷新的配置(可选, 绝大部分情况无需配置)
@@ -145,6 +204,30 @@
 			searchWhereBtnClick() {
 				// this.pageNo = 1
 				// this.pageSize = 10
+				this.dataAccountList = []
+				this.mescroll.resetUpScroll();
+			},
+			levelSelectClick() {
+				this.levelPopBool = true
+			},
+			selectLevelClick(item) {
+				this.searchStrSelect = item.nameStr
+				this.currentIndex = item.id;
+				this.mescroll.scrollTo(0, 300)
+				this.levelPopBool = false
+
+				this.dataAccountList = []
+				this.mescroll.resetUpScroll();
+			},
+			switch1Change(e) {
+				this.result_text_str = e.detail.value ? this.$t('backapi.self.account.list.sort.swith.desc.text') : this
+					.$t(
+						'backapi.self.account.list.sort.swith.asc.text')
+				this.defaultSortNum = e.detail.value ? 1 : 2
+
+				this.mescroll.scrollTo(0, 300)
+				this.levelPopBool = false
+
 				this.dataAccountList = []
 				this.mescroll.resetUpScroll();
 			},
@@ -184,10 +267,11 @@
 					},
 				})
 				let reqParam = {}
-				reqParam.time = this.currentIndex + 1
+				reqParam.level = this.currentIndex
 				if (this.searchUsername) {
 					reqParam.username = this.searchUsername
 				}
+				reqParam.sort = this.defaultSortNum
 				reqParam.pageNo = pageNum
 				reqParam.pageSize = pageSize
 				let resR = await subPlayersReq(reqParam, this.localLoginToken)
@@ -196,6 +280,17 @@
 					//设置列表数据
 					if (pageNum == 1) this.dataAccountList = []; //如果是第一页需手动制空列表
 					this.dataAccountList = this.dataAccountList.concat(resR.data.results); //追加新数据
+				} else if (resR.code === 409) {
+					uni.showToast({
+						title: this.$t('backapi.self.alert.fast.access.tip.text'),
+						icon: 'none',
+						duration: 2000,
+						success: (res) => {
+							//  请求失败,隐藏加载状态
+							this.mescroll.endErr()
+						}
+					});
+
 				} else if (resR.code === 402 || resR.code === 403) {
 					this.logout()
 					uni.showToast({
@@ -272,9 +367,72 @@
 		padding: 15px;
 	}
 
+	.fixedContent {
+		position: fixed;
+		width: 100%;
+		padding: 0 20px;
+		z-index: 1000;
+		// margin-top: 10px;
+		background: #1f252f;
+
+		.sortContainer {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			color: #fff;
+			margin-top: 10px;
+			word-break: break-word;
+
+			.text {
+				font-size: 13px;
+				margin-right: 10px;
+			}
+
+			.result_text {
+				color: red;
+				font-weight: bold;
+			}
+		}
+
+
+		.bankBox {
+			height: 40px;
+			display: flex;
+			flex-direction: row;
+			background-color: #171e25;
+			justify-content: space-between;
+			align-items: center;
+			padding: 0 20px;
+			border-radius: 4px;
+			/* margin: 0 20px; */
+			margin-top: 10px;
+
+			.t {
+				color: #f8f8f8;
+
+				.con {
+					// padding-left: 10px;
+					font-size: 14px;
+				}
+			}
+		}
+
+
+	}
+
+
+
+
+
+	.tableBox {
+		margin-top: 140px;
+		padding: 0 10px;
+	}
+
 	.inputAndSerchContent {
 		display: flex;
 		position: relative;
+		margin-top: 10px;
 
 		.iconContent {
 			position: absolute;
@@ -339,5 +497,86 @@
 				color: #ffba00;
 			}
 		}
+	}
+
+
+	/deep/ .u-drawer-bottom {
+		background-color: #1f252f;
+
+		.cards-pop {
+			padding: 18px 15px 0;
+
+			.pop-title {
+				display: flex;
+				justify-content: space-between;
+				padding-bottom: 25px;
+				border-bottom: 0.5px solid #111;
+
+				.title {
+					margin: auto;
+					text-align: center;
+
+					.title-up {
+						font-size: 16px;
+						color: #eee;
+						font-weight: 700;
+					}
+
+					.title-tip {
+						color: #ffbc00;
+						font-size: 13px;
+						padding-top: 5px;
+					}
+				}
+			}
+
+			.card-list {
+				font-size: 15px;
+				color: #000;
+
+				.card {
+					display: flex;
+					justify-content: space-between;
+					padding: 15px 0 15px 15px;
+					border-bottom: 0.5px solid #111;
+
+					.left {
+						display: flex;
+						justify-content: space-between;
+
+						.card-name {
+							color: #ddd;
+						}
+					}
+				}
+			}
+
+			.add-card {
+				margin-top: 10px;
+				font-size: 15px;
+				color: #000;
+				display: flex;
+				justify-content: space-between;
+				padding: 15px 0 15px 15px;
+
+				.left {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+
+					.add-icon {
+						margin-right: 16px;
+						width: 18px;
+						height: 14px;
+					}
+
+					.add-title {
+						color: #bbb;
+					}
+				}
+			}
+		}
+
+
 	}
 </style>

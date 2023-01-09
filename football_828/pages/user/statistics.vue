@@ -358,7 +358,7 @@
 			goToLevelDetail() {
 				// ?searchName=' + this.searchUsername
 				uni.navigateTo({
-					url: '/pages/user/subordinateDetailT',
+					url: '/pages/user/Report/accountList',
 					animationType: 'slide-in-top',
 					animationDuration: 200
 				})

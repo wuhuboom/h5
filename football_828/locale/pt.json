@@ -776,6 +776,7 @@
 	"backapi.simCurrencyEditError": "modificação do número sim falhou",
 	"backapi.simNotSet": "Número sim não vinculado",
 	"backapi.justMinsWi": "A frequência de retirada é muito rápida, tente novamente mais tarde",
+	"backapi.gtMinMoney": "O valor da retirada excede o valor máximo da retirada",
 
 
 	"backapi.self.editStr": "Alterações",
@@ -824,7 +825,11 @@
 	"backapi.self.statistics.top.content.sub.level1.text": "membro de primeira classe",
 	"backapi.self.statistics.top.content.sub.level2.text": "Membro Secundário",
 	"backapi.self.statistics.top.content.sub.level3.text": "Membro Nível 3",
-	"backapi.self.alert.fast.access.tip.text": "A frequência de acesso é muito rápida, tente novamente mais tarde"
+	"backapi.self.alert.fast.access.tip.text": "A frequência de acesso é muito rápida, tente novamente mais tarde",
+	"backapi.self.account.list.data.last.login.text": "Último Login",
+	"backapi.self.account.list.sort.swith.text": "Último login Classificar por",
+	"backapi.self.account.list.sort.swith.desc.text": "Ordem decrescente",
+	"backapi.self.account.list.sort.swith.asc.text": "Ordem ascendente"
 
 
 }
