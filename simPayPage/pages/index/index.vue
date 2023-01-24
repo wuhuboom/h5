@@ -160,7 +160,7 @@
 					<image src="../../static/images/safe.png" mode=""></image>
 				</view>
 				<view class="content">
-					©2022 Fastpay Technical Support All Rights Reserved
+					©2022 InPay Technical Support All Rights Reserved
 				</view>
 			</view>
 			<view class="payBottom" v-if="showUploadBool">
@@ -521,7 +521,7 @@
 							}
 
 							.copy {
-								color: #A8A8A8;
+								color: red;
 								font-size: 18px;
 								font-weight: bold;
 								border-radius: 15px;

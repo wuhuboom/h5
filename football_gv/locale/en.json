@@ -136,7 +136,7 @@
 	"match.order.detail.button.close.text": "Shut down",
 
 
-	"user.account.str": "Account Number",
+	"user.account.str": "Username",
 	"user.account.balance": "Account Balance",
 	"user.recharge.text": "Recharge",
 	"user.withdraw.text": "Withdraw",
@@ -164,7 +164,7 @@
 	"user.report.manage.title.text": "Report Management",
 	"user.report.manage.list.rebate.center.text": "Rebate Center",
 	"user.report.manage.list.order.center.text": "My Order",
-	"user.report.manage.list.data.center.text": "Level 123 data center",
+	"user.report.manage.list.data.center.text": "Data Center Level 1-3",
 	"user.report.manage.list.account.change.center.text": "Account Change Report",
 	"user.report.manage.list.personal.center.text": "Personal Report",
 	"user.report.manage.list.team.center.text": "Team Report",
@@ -236,7 +236,7 @@
 	"user.rebate.center.list.cell.wait.person.text": "Waiting for settlement",
 	"user.rebate.center.list.cell.receive.success.text": "Rebate Receive Success",
 
-	"user.statistics.center.title.text": "Level 123 data center",
+	"user.statistics.center.title.text": "Data Center Level 1-3",
 	"user.statistics.center.today.text": "Today",
 	"user.statistics.center.yes.text": "Yesterday",
 	"user.statistics.center.nearly7.text": "Nearly 7 day",
